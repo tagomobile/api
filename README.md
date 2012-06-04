@@ -1,4 +1,4 @@
-Tago API
+Tagomobile API
 ====================
 
 This is the API for TAGO (tagomobile.com). 
