@@ -79,21 +79,9 @@ In case if particular API method failed, you will receive response with error st
 API methods
 -----------------
 
-* [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
-* [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
-* [Accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md)
-* [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
-* [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
-* [Messages](https://github.com/37signals/bcx-api/blob/master/sections/messages.md)
-* [Comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
-* [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
-* [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
-* [Documents](https://github.com/37signals/bcx-api/blob/master/sections/documents.md)
-* [Attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
-* [Uploads](https://github.com/37signals/bcx-api/blob/master/sections/uploads.md)
-* [Calendars](https://github.com/37signals/bcx-api/blob/master/sections/calendars.md)
-* [Calendar events](https://github.com/37signals/bcx-api/blob/master/sections/calendar_events.md)
-* 
+* [Barcodes](https://github.com/tagomobile/api/blob/master/documents/barcodes.md)
+* [Folders](https://github.com/tagomobile/api/blob/master/documents/folders.md)
+* [Analytics](https://github.com/tagomobile/api/blob/master/documents/analytics.md)
 
 OData Queries
 ---------------
