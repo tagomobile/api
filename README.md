@@ -85,8 +85,16 @@ Because Tagomobile API is supported OData protocol, you can take full advantage 
 Below is example of OData parameters applied to URL requests to do some useful operations.
 
 Pagination. Get 10 barcodes begingin from 41:
-
 ```GET /barcodes?$skip=40&$top=20```
+
+Sorting. Get barcodes sorted by created date:
+```GET /barcodes?$orderby=created_date```
+
+Sorting. Get onlty trackable barcodes:
+```GET /barcodes?$filter=trackable eq 'true'```
+
+Sorting. Get all URL barcodes pointed to twitter.com domain:
+```GET /barcodes?$filter=substringof('twitter.com', url)```
 
 
 More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
