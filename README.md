@@ -81,7 +81,12 @@ OData Queries
 ---------------
 
 Because Tagomobile API is supported OData protocol, you can take full advantage of some usefull OData features to query data from API. For example, you can apply following operations to collections of data, returned from API: pagination, filtering, sorting, top records and other.
-Below 
+
+Below is example of OData parameters applied to URL requests to do some useful operations.
+
+Pagination. Get 10 barcodes begingin from 41:
+
+```GET /barcodes?$skip=40&$top=20```
 
 
 More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
