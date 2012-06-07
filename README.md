@@ -24,6 +24,14 @@ Tagomobile API support authorisationg using API key. This key can be found in yo
 Read the [authentication guide](#) to get started.
 
 
+Data format
+----------------
+
+Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`).
+
+If query to API does not specify media type, we tread data as **JSON by default**.
+
+
 Making a request
 ----------------
 
@@ -32,19 +40,12 @@ All URLs start with `http://api.tagomobile.com/v1/` The path is prefixed with th
 To make a request for all barcodes on your account, you need to append the barcodes index path to the base url to form URL lool like https://api.tagomobile.com/v1/barcodes. In curl, that looks like:
 
 ```shell
-curl https://api.tagomobile.com/v1/barcodes \
--H 'Authorize: ApiKey=vbs76t8sdv' \
--H 'Accept: application/json' \
+curl http://api.tagomobile.com/v1/barcodes
+  -H 'Authorize: ApiKey=vbs76t8sdv'
+  -H 'Accept: application/json'
 ```
 
-Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML, JSON, and form-urlencoded data.
+Simple response
+-------------------
 
-JSON `-H 'Accept: application/json'`
-XML `'Accept: application/xml'`
-form-urlencoded data `'Accept: application/x-www-form-urlencoded'`
 
-If query to API does not specify media type, we tread data serialized as **JSON by default**.
-
-Response format
-----------------
-If query to API doesn not contain Accept or Content-Type headers it is JSON by default.
