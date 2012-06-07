@@ -76,6 +76,24 @@ Handling errors
 If TAGO is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
 In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
 
+API methods
+-----------------
+
+* [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
+* [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
+* [Accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md)
+* [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
+* [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
+* [Messages](https://github.com/37signals/bcx-api/blob/master/sections/messages.md)
+* [Comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
+* [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
+* [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
+* [Documents](https://github.com/37signals/bcx-api/blob/master/sections/documents.md)
+* [Attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
+* [Uploads](https://github.com/37signals/bcx-api/blob/master/sections/uploads.md)
+* [Calendars](https://github.com/37signals/bcx-api/blob/master/sections/calendars.md)
+* [Calendar events](https://github.com/37signals/bcx-api/blob/master/sections/calendar_events.md)
+* 
 
 OData Queries
 ---------------
@@ -98,3 +116,9 @@ Below is example of OData parameters applied to URL requests to do some useful o
 
 
 More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
+
+
+Help us make it better
+----------------------
+
+Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please email us at [support@tago.ca](mailto:support@tago.ca).
