@@ -51,7 +51,7 @@ Response example
 `GET /barcodes` will return all barcodes.
 
 ```shell
-Status: 201 Created
+Status: 200 OK
 Location: http://api.tagomobile.com/v1/barcodes
 ```
 
