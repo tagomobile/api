@@ -24,7 +24,7 @@ Tagomobile API support authorisationg using API key. This key can be found in yo
 Read the [authentication guide](#) to get started.
 
 
-Data format
+Data formats
 ----------------
 
 Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`).
@@ -45,7 +45,27 @@ curl http://api.tagomobile.com/v1/barcodes
   -H 'Accept: application/json'
 ```
 
-Simple response
+Response example
 -------------------
 
+`GET /barcodes` will return all barcodes.
+
+```shell
+Status: 201 Created
+Location: http://api.tagomobile.com/v1/barcodes
+```
+
+```json
+[
+  {
+    "id": 124542,
+    "type": "URL",
+    "folder_id": "231",
+    "trackable": "true",
+    "short_link": "http://tago.ca/abc",
+    "label": "magazine"
+    "url": "http://www.youtube.com/watch?v=HkSDN1TXjvk"
+  }
+]
+```
 
