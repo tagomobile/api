@@ -81,3 +81,4 @@ OData Operations
 ---------------
 
 
+More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
