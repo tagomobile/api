@@ -77,6 +77,14 @@ If TAGO is having trouble, you might see a 5xx error. `500` means that the app i
 In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
 
 
+API reference
+-----------------
+
+* [Barcodes](https://github.com/tagomobile/api/blob/master/documents/barcodes.md)
+* [Folders](https://github.com/tagomobile/api/blob/master/documents/folders.md)
+* [Analytics](https://github.com/tagomobile/api/blob/master/documents/analytics.md)
+
+
 OData Queries
 ---------------
 
@@ -98,3 +106,9 @@ Below is example of OData parameters applied to URL requests to do some useful o
 
 
 More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
+
+
+Help us make it better
+----------------------
+
+Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please email us at [support@tago.ca](mailto:support@tago.ca).
