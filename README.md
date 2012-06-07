@@ -93,7 +93,7 @@ Because Tagomobile API is supported OData protocol, you can take full advantage 
 
 Below is example of OData parameters applied to URL requests to do some useful operations.
 
-* Pagination. Get 10 barcodes begingin from 41:
+* Pagination. Get 20 barcodes begingin from 41:
 ```GET /barcodes?$skip=40&$top=20```
 
 * Sorting. Get barcodes sorted by created date:
