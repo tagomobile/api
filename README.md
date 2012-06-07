@@ -27,7 +27,7 @@ Read the [authentication guide](#) to get started.
 Data formats
 ----------------
 
-Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`).
+Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`).  You must supply Content-Type and Accept header on all requests.
 
 If query to API does not specify media type, we tread data as **JSON by default**.
 
