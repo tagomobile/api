@@ -77,8 +77,11 @@ If TAGO is having trouble, you might see a 5xx error. `500` means that the app i
 In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
 
 
-OData Operations
+OData Queries
 ---------------
+
+Because Tagomobile API is supported OData protocol, you can take full advantage of some usefull OData features to query data from API. For example, you can apply following operations to collections of data, returned from API: pagination, filtering, sorting, top records and other.
+Below 
 
 
 More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
