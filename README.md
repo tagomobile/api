@@ -45,7 +45,9 @@ curl http://api.tagomobile.com/v1/barcodes
   -H 'Accept: application/json'
 ```
 
-[Check out this tutorial]() to see how make calls to our RESTfull API from Javascript, C#, PHP, Ryby, Python and Java.
+Check out this tutorial to see how make calls to our RESTfull API from Javascript, C#, PHP, Ryby, Python and Java:
+
+[How to make API calls using different techologies]()
 
 Response example
 -------------------
