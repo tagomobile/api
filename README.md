@@ -45,6 +45,8 @@ curl http://api.tagomobile.com/v1/barcodes
   -H 'Accept: application/json'
 ```
 
+(Click here)[] to see how make calls to our RESTfull from Javascript, C#, PHP, Ryby, Python and Java.
+
 Response example
 -------------------
 
