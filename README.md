@@ -2,7 +2,7 @@ Tagomobile API
 ====================
 
 This is the API for TAGO (tagomobile.com). 
-Tago API is a REST-style API that uses JSON for serialization and authentication token for authentication.
+Tago API is a RESTful style API that uses JSON for serialization and authentication token for authentication.
 
 Additionally our API enpoint is fully supporting [OData](http://odata.org) protocol. OData is a RESTful API protocol, which adds a lot of useful functionality on top of it. One of the main feature is that OData allows RPC-style operations to be made from major programing languages. You can read more about OData stanart at http://odata.org. Some of the libraries supports OData client-side code generation is .NET, PHP, Ruby, Objective C, Android and more.
 
@@ -19,9 +19,12 @@ We reserves the right to add new attributes and resources to the API without adv
 Authentication
 ----------------
 
-Tagomobile API support authorisationg using API key. This key can be found in your TAGO account under Account page.
+In order to access our API, you need to have TAGO account. From your account you will be able to get API key that you will use with every request to the Tagomobile API. To obtain API key you need to login to TAGO account, go to Account page, click button "Generate API Key" and copy generated key.
 
-Read the [authentication guide](#) to get started.
+You can sign up for TAGO account by following link:
+[http://tagomobile.com/signup](http://tagomobile.com/pricing)
+
+Read the [Authentication Guide](#) to get started.
 
 
 Data formats
