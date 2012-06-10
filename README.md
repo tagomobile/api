@@ -4,7 +4,7 @@ Tagomobile API
 This is the API for TAGO (tagomobile.com). 
 Tago API is a RESTful style API that uses JSON for serialization and authentication token for authentication.
 
-Additionally our API enpoint is fully supporting [OData](http://odata.org) protocol. OData is a RESTful API protocol, which adds a lot of useful functionality on top of it. One of the main feature is that OData allows RPC-style operations to be made from major programing languages. You can read more about OData stanart at http://odata.org. Some of the libraries supports OData client-side code generation is .NET, PHP, Ruby, Objective C, Android and more.
+Additionally our API enpoint is fully supporting [OData](http://odata.org) protocol. OData is an extensiton for RESTful API protocol, which adds a lot of useful functionality to it. One of the main feature is that OData allows RPC-style operations to be made from major programing languages. You can read more about OData stanart at http://odata.org. Some of the libraries supports OData client-side code generation is .NET, PHP, Ruby, Objective C, Android and more.
 
 Full list of clients supported OData clients:
 http://www.odata.org/libraries
