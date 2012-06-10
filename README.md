@@ -23,7 +23,7 @@ In order to access our API, you need to have TAGO account. From your account you
 
 You can sign up for TAGO account by following link: [http://tagomobile.com/signup](http://tagomobile.com/pricing)
 
-You can pass API via query arguments: 
+All API requests require authentication. You can pass API key via query arguments: 
 
 `GET /barcodes?apiKey=apiKey`
 
