@@ -7,7 +7,7 @@ From your account you will be able to get your API key that you will use with ev
 You can sign up for TAGO account by following link: [http://tagomobile.com/signup](http://tagomobile.com/pricing)
 
 All API requests require authentication. 
-There is three options you can pass API key with the reuest.
+There is three options you can pass API key with the request.
 
 Query arguments (default)
 ----------------
