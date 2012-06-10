@@ -28,7 +28,7 @@ All API requests require authentication. You can pass API key via query argument
 `GET /barcodes?apiKey=apiKey`
 
 Also you can pass API key via X-Auth or Authorization HTTP headers. 
-Read the [Authentication Guide](#) for more info.
+Read the [Authentication Guide](https://github.com/tagomobile/api/blob/master/documents/authentication.md) for more info.
 
 
 Data formats
