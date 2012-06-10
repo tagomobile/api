@@ -27,7 +27,7 @@ You can sign up for TAGO account by following link:
 All API requests require authentication via query arguments: 
 
 ```shell
-curl http://api.tagomobile.com/v1/barcodes?apiKey=apiKey
+GET http://api.tagomobile.com/v1/barcodes?apiKey=apiKey
 ```
 
 Also you can pass API key via X-Auth or Authorization HTTP headers. 
