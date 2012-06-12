@@ -9,7 +9,7 @@ Fetching
 * `GET /barcodes?folder={id}` return all barcodes from speicif folder by folder id.
 * `GET /barcodes?folderName={id}` return all barcodes from speicif folder by folder name.
 * `GET /barcodes$skip={skip}&$top={top}` return custom range of barcodes.
-* `GET /barcodes/{id}` return barcode content.
+* `GET /barcodes/{id}` return specific barcode content.
 * `GET /calendars/1/accesses.json` will return all the people with access to the calendar.
 
 Management
