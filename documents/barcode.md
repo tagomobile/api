@@ -90,7 +90,7 @@ Barcode general:
         <td>Url</td>
         <td>object</td>
         <td>no</td>
-        <td>Object with URL barcode specific parameters. See <a href="#url">URL Barcode</a> specification</td>
+        <td>Object with URL barcode specific parameters. See <a href="#url">URL Barcode</a> specification below</td>
     </tr>
     <tr>
         <td>Text</td>
