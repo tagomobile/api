@@ -42,8 +42,10 @@
         <td>Specify if geo-location should be requested from user, once he scan QR Code. Default: false</td>
     </tr>
 </table>
+<br />
 
-URL barcode specific parameters
+URL barcode specific parameters:
+
 
 <table>
     <tr>
@@ -59,8 +61,9 @@ URL barcode specific parameters
         <td>URL of resource where QR Code should be pointed to</td>
     </tr>
 </table>
+<br />
 
-Text barcode specific parameters
+Text barcode specific parameters:
 
 <table>
     <tr>
@@ -76,8 +79,9 @@ Text barcode specific parameters
         <td>Text which will be displayed to user</td>
     </tr>
 </table>
+<br />
 
-Contact Info barcode specific parameters
+Contact Info barcode specific parameters:
 
 <table>
     <tr>
