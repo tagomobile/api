@@ -6,7 +6,7 @@ When your requesting\creating or updating  specific type of QR Code (Url, Text N
 need to you read\write Barcode general paramets (which are the same for all types of barcodes) and in correspondent
 field (Url, Text, Contact) read\write specific JSON object, representing this particular type.
 
-Example
+**Examples**
 
 URL Barcode:
 
