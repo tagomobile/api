@@ -42,7 +42,7 @@ QR Code Image Generating
 Please note, that barcode firts should be created and than QR Code image can be donloaded via separate call
 
 * `GET /barcodes/{id}/Image` return QR Code image by barcode id. Image size - M, Error Correction Level - M, format - png
-* `GET /barcodes/{id}/Image?forat=eps&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
+* `GET /barcodes/{id}/Image?format=eps&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
 <br />
 
 ```http
@@ -88,8 +88,8 @@ Listing Barcodes
 ----
 
 * `GET /barcodes` return list of all barcodes.
-* `GET /barcodes?folder={id}` return all barcodes from specific folder by folder id.
-* `GET /barcodes?folderName={id}` return all barcodes from speicif folder by folder name.
+* `GET /barcodes?folderId={id}` return all barcodes from specific folder by folder id.
+* `GET /barcodes?folderName={name}` return all barcodes from speicif folder by folder name.
 * `GET /barcodes$skip={skip}&$top={top}` return custom range of barcodes.
 <br />
 
