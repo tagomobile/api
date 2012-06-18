@@ -1,6 +1,8 @@
 Barcode Type
 ========
 
+[URL Object](#url)
+
 Barcodes are represented as JSON or XML objects with specific keys.
 When your requesting\creating or updating  specific type of QR Code (Url, Text Note or Contact Info) you
 need to you read\write Barcode general paramets (which are the same for all types of barcodes) and in correspondent
@@ -90,25 +92,25 @@ Barcode general:
         <td>Url</td>
         <td>object</td>
         <td>no</td>
-        <td>Object with URL barcode specific parameters. See 'URL Barcode' data structure below for the refference</td>
+        <td>Object with URL barcode specific parameters. See <a href="#url">URL Barcode</a> specification</td>
     </tr>
     <tr>
         <td>Text</td>
         <td>object</td>
         <td>no</td>
-        <td>Object with Text barcode specific parameters. See 'Text Barcode' data structure below for the refference</td>
+        <td>Object with Text barcode specific parameters. See <a href="#text">Text Barcode</a> specification below</td>
     </tr>
     <tr>
         <td>Contact</td>
         <td>object</td>
         <td>no</td>
-        <td>Object with Contact Info barcode specific parameters. See 'Contact Info Barcode' data structure below for the refference</td>
+        <td>Object with Contact Info barcode specific parameters. See <a href="#contact">Contact Info Barcode</a> specification below</td>
     </tr>
 </table>
 <br />
 
+<a name="url"></a>
 URL barcode:
-
 
 <table>
     <tr>
@@ -126,6 +128,7 @@ URL barcode:
 </table>
 <br />
 
+<a name="text"></a>
 Text barcode:
 
 <table>
@@ -144,6 +147,7 @@ Text barcode:
 </table>
 <br />
 
+<a name="contact"></a>
 Contact Info barcode:
 
 <table>
