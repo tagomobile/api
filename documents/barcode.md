@@ -12,12 +12,12 @@ URL Barcode:
 
 ```json
 {
-    type: url, 
-    FolderName: Default,
-    isTrackable: true, 
-    Url: 
+    "type": "url", 
+    "folderName": "Default",
+    "isTrackable": true, 
+    "Url": 
         { 
-            Url: url
+            "Url": "http://google.com"
         } 
 }
 ```
@@ -27,12 +27,12 @@ Text Barcode
 
 ```json
 {
-    type: url, 
-    FolderName: Default,
-    isTrackable: true, 
-    Text: 
+    "type": "url", 
+    "folderName": "Default",
+    "isTrackable": true, 
+    "Text": 
         { 
-            Text: Enter your text here...
+            "Text": "Your text goes here..."
         } 
 }
 ```
