@@ -5,6 +5,8 @@ Creating Barocdes
 ----
 * `POST /barcodes` add barcode.
 
+Request:
+
 ```json
 {
     "type": "url", 
@@ -15,7 +17,25 @@ Creating Barocdes
             "Url": "http://google.com"
         } 
 }
+
 ```
+Response:
+
+```
+Status: 201 Created
+```
+
+```json
+{
+    "shortLink": "http://tago.ca/MYj",
+    "label": "",
+    "folderId": 16771,
+    "id": 24906,
+    "isTrackable": true,
+    "type": "url"
+}
+```
+
 
 QR Code Image Generating
 ----
