@@ -162,7 +162,7 @@ Contact Info barcode:
         <td>First Name</td>
     </tr>
     <tr>
-        <td>lstName</td>
+        <td>lastName</td>
         <td>string</td>
         <td>no</td>
         <td>Last Name</td>
@@ -190,12 +190,6 @@ Contact Info barcode:
         <td>string</td>
         <td>no</td>
         <td>Mobile phone number</td>
-    </tr>
-    <tr>
-        <td>workPhone</td>
-        <td>string</td>
-        <td>no</td>
-        <td>Work phone number</td>
     </tr>
     <tr>
         <td>workPhone</td>
