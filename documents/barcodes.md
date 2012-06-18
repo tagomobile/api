@@ -93,11 +93,60 @@ Listing Barcodes
 * `GET /barcodes$skip={skip}&$top={top}` return custom range of barcodes.
 <br />
 
+```json
+[
+  {
+    "shortLink": "http://tago.ca/EUd",
+    "label": "",
+    "folderId": 16771,
+    "url": "",
+    "id": 24798,
+    "isTrackable": true,
+    "type": "text"
+    "createdDate": "14/12/2012"
+  },
+  {
+    "shortLink": "http://tago.ca/zSZ",
+    "label": "",
+    "folderId": 16771,
+    "url": "http://google.com",
+    "id": 24849,
+    "isTrackable": true,
+    "type": "url"
+    "createdDate": "14/12/2012"
+  }
+]
+```
+
+
 Updating Barcodes
 ----
 * `PUT /barcodes/{id}` update barcode content.
 <br />
 
+Request JSON data:
+
+```json
+{
+    "type": "text", 
+    "Text": 
+        { 
+            "Text": "New text goes here..."
+        } 
+}
+
+```
+
+Response:
+
+```
+Status: 200 OK
+```
+
+
+
 Deleting barocdes
 ----
 * `DELETE /barcodes/{id}` delete barcode.
+
+Will delete the barcode by it id and return `204 No Content` if that was successful. If the user does not have access to delete the barcode, you'll see `403 Forbidden`.
