@@ -3,8 +3,19 @@ Barcodes
 
 Creating Barocdes
 ----
-* `POST /barcodes?type={type}&...` add barcode.
-<br />
+* `POST /barcodes` add barcode.
+
+```json
+{
+    "type": "url", 
+    "folderName": "Default",
+    "isTrackable": true, 
+    "Url": 
+        { 
+            "Url": "http://google.com"
+        } 
+}
+```
 
 QR Code Image Generating
 ----
