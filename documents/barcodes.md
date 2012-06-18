@@ -80,7 +80,7 @@ Status: 200 OK
   "createdDate": "24/03/2012",
   "Url": {
     "Url": "http://www.yandex.ru"
-  },
+  }
 }
 ```
 
