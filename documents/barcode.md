@@ -1,8 +1,6 @@
 Barcode Type
 ========
 
-[URL Object](#url)
-
 Barcodes are represented as JSON or XML objects with specific keys.
 When your requesting\creating or updating  specific type of QR Code (Url, Text Note or Contact Info) you
 need to you read\write Barcode general paramets (which are the same for all types of barcodes) and in correspondent
