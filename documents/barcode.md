@@ -88,19 +88,19 @@ Barcode general:
     </tr>
     <tr>
         <td>Url</td>
-        <td>string</td>
+        <td>object</td>
         <td>no</td>
         <td>Object with URL barcode specific parameters. See 'URL Barcode' data structure below for the refference</td>
     </tr>
     <tr>
         <td>Text</td>
-        <td>string</td>
+        <td>object</td>
         <td>no</td>
         <td>Object with Text barcode specific parameters. See 'Text Barcode' data structure below for the refference</td>
     </tr>
     <tr>
         <td>Contact</td>
-        <td>string</td>
+        <td>object</td>
         <td>no</td>
         <td>Object with Contact Info barcode specific parameters. See 'Contact Info Barcode' data structure below for the refference</td>
     </tr>
