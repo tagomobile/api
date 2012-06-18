@@ -1,4 +1,4 @@
-Barcode Model
+Barcode Type
 ========
 
 Barcodes are represented as JSON or XML objects with specific keys.
@@ -22,7 +22,7 @@ URL Barcode:
 }
 ```
 
-Text Barcode
+Text Barcode:
 
 
 ```json
