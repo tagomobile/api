@@ -1,3 +1,48 @@
+Barcode Model
+========
+
+Barcodes are represented as JSON or XML objects with specific keys.
+When your requesting\creating or updating  specific type of QR Code (Url, Text Note or Contact Info) you
+need to you read\write Barcode general paramets (which are the same for all types of barcodes) and in correspondent
+field (Url, Text, Contact) read\write specific JSON object, representing this particular type.
+
+Example
+
+URL Barcode:
+
+```json
+{
+    type: url, 
+    FolderName: Default,
+    isTrackable: true, 
+    Url: 
+        { 
+            Url: url
+        } 
+}
+```
+
+Text Barcode
+
+
+```json
+{
+    type: url, 
+    FolderName: Default,
+    isTrackable: true, 
+    Text: 
+        { 
+            Text: Enter your text here...
+        } 
+}
+```
+
+Refference
+----
+
+
+Barcode general:
+
 <table>
     <tr>
       <th>Name</th>
@@ -44,7 +89,7 @@
 </table>
 <br />
 
-URL barcode specific parameters:
+URL barcode:
 
 
 <table>
@@ -63,7 +108,7 @@ URL barcode specific parameters:
 </table>
 <br />
 
-Text barcode specific parameters:
+Text barcode:
 
 <table>
     <tr>
@@ -81,7 +126,7 @@ Text barcode specific parameters:
 </table>
 <br />
 
-Contact Info barcode specific parameters:
+Contact Info barcode:
 
 <table>
     <tr>
