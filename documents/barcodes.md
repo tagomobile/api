@@ -25,6 +25,21 @@ Please note, that barcode firts should be created and than QR Code image can be 
 * `GET /barcodes/{id}/Image?forat=eps&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
 <br />
 
+```http
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: image/png
+Expires: -1
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Mon, 18 Jun 2012 04:46:50 GMT
+Content-Length: 3329
+
+"\211PNG\r\n\032\n\000\000\000\rIHDR\000\000\000\313\000\000\..."
+```
+
 Getting Barcodes
 ----
 * `GET /barcodes/{id}` return barcode content by it id.
