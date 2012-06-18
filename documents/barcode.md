@@ -27,7 +27,7 @@ Text Barcode:
 
 ```json
 {
-    "type": "url", 
+    "type": "text", 
     "folderName": "Default",
     "isTrackable": true, 
     "Text": 
@@ -85,6 +85,24 @@ Barcode general:
         <td>bool</td>
         <td>no</td>
         <td>Specify if geo-location should be requested from user, once he scan QR Code. Default: false</td>
+    </tr>
+    <tr>
+        <td>Url</td>
+        <td>string</td>
+        <td>no</td>
+        <td>Object with URL barcode specific parameters. See 'URL Barcode' data structure below for the refference</td>
+    </tr>
+    <tr>
+        <td>Text</td>
+        <td>string</td>
+        <td>no</td>
+        <td>Object with Text barcode specific parameters. See 'Text Barcode' data structure below for the refference</td>
+    </tr>
+    <tr>
+        <td>Contact</td>
+        <td>string</td>
+        <td>no</td>
+        <td>Object with Contact Info barcode specific parameters. See 'Contact Info Barcode' data structure below for the refference</td>
     </tr>
 </table>
 <br />
