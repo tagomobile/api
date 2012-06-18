@@ -5,7 +5,7 @@ Creating Barocdes
 ----
 * `POST /barcodes` add barcode.
 
-Request:
+Request data:
 
 ```json
 {
