@@ -5,7 +5,7 @@ Creating Barocdes
 ----
 * `POST /barcodes` add barcode.
 
-Request data:
+Request JSON data:
 
 ```json
 {
@@ -64,6 +64,24 @@ Getting Barcodes
 ----
 * `GET /barcodes/{id}` return barcode content by it id.
 <br />
+
+```
+Status: 200 OK
+```
+
+```json
+{
+  "folderId": 16771,
+  "id": 24906,
+  "isTrackable": true,
+  "type": "url",
+  "label: "Magazine",
+  "geoEnabled": false,
+  "Url": {
+    "Url": "http://www.yandex.ru"
+  }
+}
+```
 
 Listing Barcodes
 ----
