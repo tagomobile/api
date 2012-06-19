@@ -7,6 +7,8 @@ Creating Barocdes
 
 Request JSON data:
 
+Type: [Barcode](barcode.md)
+
 ```json
 {
     "type": "url", 
