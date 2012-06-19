@@ -47,24 +47,56 @@ Barcode general:
     <tr>
       <th>Name</th>
       <th>Type</th>
+      <th>Read-only</th>
       <th>Required</th>
       <th>Comment</th>
     </tr>
     <tr>
         <td>type</td>
         <td>enum</td>
+        <td>no</td>
         <td>yes</td>
         <td>Type of barcode. Values: url, text, contact</td>
     </tr>
     <tr>
         <td>isTrackable</td>
         <td>bool</td>
+        <td>no</td>
         <td>yes</td>
         <td>Specify if should be created trackable or non-tackable(Embedded) barcode.</td>
     </tr>
     <tr>
+        <td>id</td>
+        <td>long</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>Unique barcode id. Signed 64-bit integers</td>
+    </tr>
+    <tr>
+        <td>ulr</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>If barcode type is 'url', than this field will conatin target url. Otherwise empty</td>
+    </tr>
+    <tr>
+        <td>shortLink</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>If barcode is trackable, than this field will contain it short url. Otherwise empty</td>
+    </tr>
+        <tr>
+        <td>createdDate</td>
+        <td>date</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>The time the barcode was created</td>
+    </tr>
+    <tr>
         <td>folderId</td>
         <td>int</td>
+        <td>no</td>
         <td>no</td>
         <td>Folder id where to add barcode</td>
     </tr>
@@ -72,11 +104,13 @@ Barcode general:
         <td>folderName</td>
         <td>string</td>
         <td>no</td>
+        <td>no</td>
         <td>Folder name where to add barcode, if folder id not specified</td>
     </tr>
     <tr>
         <td>label</td>
         <td>string</td>
+        <td>no</td>
         <td>no</td>
         <td>Optionally set barcode lable</td>
     </tr>
@@ -84,23 +118,27 @@ Barcode general:
         <td>geoEnabled</td>
         <td>bool</td>
         <td>no</td>
+        <td>no</td>
         <td>Specify if geo-location should be requested from user, once he scan QR Code. Default: false</td>
     </tr>
     <tr>
-        <td>Url</td>
+        <td>url</td>
         <td>object</td>
+        <td>no</td>
         <td>no</td>
         <td>Object with URL barcode specific parameters. See <a href="#url">URL Barcode</a> specification below</td>
     </tr>
     <tr>
-        <td>Text</td>
+        <td>text</td>
         <td>object</td>
+        <td>no</td>
         <td>no</td>
         <td>Object with Text barcode specific parameters. See <a href="#text">Text Barcode</a> specification below</td>
     </tr>
     <tr>
-        <td>Contact</td>
+        <td>сontact</td>
         <td>object</td>
+        <td>no</td>
         <td>no</td>
         <td>Object with Contact Info barcode specific parameters. See <a href="#contact">Contact Info Barcode</a> specification below</td>
     </tr>
@@ -114,12 +152,14 @@ URL barcode:
     <tr>
       <th>Name</th>
       <th>Type</th>
+      <th>Read-only</th>
       <th>Required</th>
       <th>Comment</th>
     </tr>
     <tr>
         <td>url</td>
         <td>string</td>
+        <td>no</td>
         <td>yes</td>
         <td>URL of resource where QR Code should be pointed to</td>
     </tr>
