@@ -48,7 +48,7 @@ To make a request for all barcodes on your account, you need to append the barco
 
 ```shell
 curl http://api.tagomobile.com/v1/barcodes
-  -H 'Authorize: ApiKey=vbs76t8sdv'
+  -H 'X-ApiKey: ApiKey=apiKey'
   -H 'Accept: application/json'
 ```
 
