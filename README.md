@@ -43,7 +43,7 @@ To make a request for all barcodes on your account, you need to append the barco
 ```shell
 curl http://api.tagomobile.com/v1/barcodes
   -H 'X-ApiKey: ApiKey=apiKey'
-  -d '{"type": "url", "folderName": "Default","isTrackable": true, "Url": {"Url": "http://google.com"} }
+  -d '{"type": "url", "folderName": "Default","isTrackable": true, "Url": {"Url": "http://google.com"}}'
   -X POST
 ```
 
