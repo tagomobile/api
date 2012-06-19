@@ -13,6 +13,10 @@ URL Barcode:
 ```json
 {
     "type": "url", 
+    "id": "2232",
+    "createdDate" : "23/07/2012",
+    "shortLink": "http://tago.ca/abc",
+    "targetUrl": "http://google.com",
     "folderName": "Default",
     "isTrackable": true, 
     "Url": 
@@ -73,11 +77,11 @@ Barcode general:
         <td>Unique barcode id. Signed 64-bit integers</td>
     </tr>
     <tr>
-        <td>url</td>
+        <td>targetUlr</td>
         <td>string</td>
         <td>yes</td>
         <td>no</td>
-        <td>If barcode type is 'url', than this field will conatin target url. Otherwise empty</td>
+        <td>If barcode type is 'url', than this field will conatin target url. Otherwise empty. Duplicate of URL Barcode field, intoduced for convinience purpose only</td>
     </tr>
     <tr>
         <td>shortLink</td>
