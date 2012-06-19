@@ -5,9 +5,9 @@ Creating Barocdes
 ----
 * `POST /barcodes` add barcode.
 
-Request JSON data:
+Data type: [Barcode](barcode.md)
 
-Type: [Barcode](barcode.md)
+Request JSON data:
 
 ```json
 {
@@ -67,6 +67,8 @@ Getting Barcodes
 * `GET /barcodes/{id}` return barcode content by it id.
 <br />
 
+Data type: [Barcode](barcode.md)
+
 ```
 Status: 200 OK
 ```
@@ -94,6 +96,8 @@ Listing Barcodes
 * `GET /barcodes?folderName={name}` return all barcodes from speicif folder by folder name.
 * `GET /barcodes$skip={skip}&$top={top}` return custom range of barcodes.
 <br />
+
+Data type: [BarcodeInfo](barcodeInfo.md)
 
 ```json
 [
@@ -125,6 +129,8 @@ Updating Barcodes
 ----
 * `PUT /barcodes/{id}` update barcode content.
 <br />
+
+Data type: [Barcode](barcode.md)
 
 Request JSON data:
 
