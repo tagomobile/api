@@ -38,7 +38,7 @@ Content-Length: 3329
 
 ### Generate Trackable\Non-Trackable code using POST request
 
-This method will generate Trackable or Non-Trackable code using single API call and.
+This method will generate Trackable or Non-Trackable code using single API call.
 
 Trackable code will be added into the account automatically.
 
