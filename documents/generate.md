@@ -5,8 +5,8 @@ Generate
 
 This method will generate embedded text code using single API call and without adding the barcode into the account.
 
-* `GET /generate?type=text&text={text}` add barcode.
-* `GET /generate/?type=text&text={text}&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
+* `GET /generate?type=text&content=My%20text` add barcode.
+* `GET /generate/?type=text&content=My%20text&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
 <br />
 
 Request:
