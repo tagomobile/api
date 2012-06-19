@@ -5,8 +5,8 @@ Generate
 
 This method will generate url or text code using single API call and without adding the barcode into the account.
 
-* `GET /generate?type=text&text=My%20text` add barcode.
-* `GET /generate/?type=text&text=My%20text&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
+* `GET /generate?type=text&text=My%20text` generate barcode without adding it to the account
+* `GET /generate/?type=text&text=My%20text&format=png&size=M&errorCorrection=M` generate barcode with custom image settigns. Barcode will not be added to the account
 <br />
 
 **Examples**
@@ -44,11 +44,13 @@ Trackable code will be added into the account automatically.
 
 For Non-Trackable you could specify if code needed to be added it into the account, once generated, or not.
 
-* `POST /generate` add barcode.
+* `POST /generate?add={bool}` generate barcode.
 
 Data type: [Barcode](barcode.md)
 
-Request JSON data:
+Request:
+
+    POST /generate?add=true
 
 ```json
 {
