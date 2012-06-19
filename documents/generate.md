@@ -3,17 +3,17 @@ Generate
 
 ### Generate Embeddede Text code using GET request
 
-This method will generate embedded text code using single API call and without adding the barcode into the account.
+This method will generate url or text code using single API call and without adding the barcode into the account.
 
-* `GET /generate?type=text&content=My%20text` add barcode.
-* `GET /generate/?type=text&content=My%20text&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
+* `GET /generate?type=text&text=My%20text` add barcode.
+* `GET /generate/?type=text&text=My%20text&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
 <br />
 
-Request:
+Sample:
 
-```
-GET http://www.tagomobile.com/api/v1/generate?type=text&text=Hello%20World&format=png
-```
+<a>http://www.tagomobile.com/api/v1/generate?type=url&url=http://google.com&format=png&apiKey='303kfd0-2223334w3-3243434-224324"</a>
+
+*Note: Provided API Key is for testing purposes only, do not use in production environment.
 
 Response:
 
