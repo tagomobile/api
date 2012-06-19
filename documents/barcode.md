@@ -73,7 +73,7 @@ Barcode general:
         <td>Unique barcode id. Signed 64-bit integers</td>
     </tr>
     <tr>
-        <td>ulr</td>
+        <td>url</td>
         <td>string</td>
         <td>yes</td>
         <td>no</td>
