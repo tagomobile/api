@@ -38,6 +38,7 @@ Content-Length: 3329
 This method will generate Trackable or Non-Trackable code using single API call and.
 
 Trackable code will be added into the account automatically.
+
 For Non-Trackable could could specify if you would like to add it into the account or not.
 
 * `POST /generate` add barcode.
