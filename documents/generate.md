@@ -42,9 +42,9 @@ This method will generate Trackable or Non-Trackable code using single API call.
 
 Trackable code will be added into the account automatically.
 
-For Non-Trackable you could specify if code needed to be added it into the account, once generated, or not.
+For Non-Trackable you could optioanlly specify if code needed to be added it into the account or not. If not specified, code will be added by default.
 
-* `POST /generate?add={bool}` generate barcode.
+* `POST /generate?add={bool}` generate barcode. 'add' parameter is 'true' by default.
 
 Data type: [Barcode](barcode.md)
 
