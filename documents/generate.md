@@ -1,7 +1,9 @@
 Generate
 =======
 
-### Generate Embeddede Text code without adding it into the account
+### Generate Embeddede Text code using GET request
+
+This method will generate embedded text code using single API call and without adding the barcode into the account.
 
 * `GET /generate?type=text&text={text}` add barcode.
 * `GET /generate/?type=text&text={text}&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
@@ -31,7 +33,12 @@ Content-Length: 3329
 
 ```
 
-### Generate Trackable\Non-Trackable code with automatic adding it into the account
+### Generate Trackable\Non-Trackable code using POST request
+
+This method will generate Trackable or Non-Trackable code using single API call and.
+
+Trackable code will be added into the account automatically.
+For Non-Trackable could could specify if you would like to add it into the account or not.
 
 * `POST /generate` add barcode.
 
