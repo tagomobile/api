@@ -10,12 +10,6 @@ Full list of clients supported OData clients:
 http://www.odata.org/libraries
 
 
-Change Policy
-----------------
-
-We reserves the right to add new attributes and resources to the API without advance notice. Breaking changes such as removing or renaming an attribute, may happen on an existing version of the API with two weeks notice. Major structural changes will only happen within the context of a version update.
-
-
 Authentication
 ----------------
 
@@ -80,17 +74,9 @@ Location: http://api.tagomobile.com/v1/barcodes
 ]
 ```
 
-
-Handling errors
----------------
-
-If TAGO is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
-In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
-
-
 API reference
 -----------------
-
+General
 * [Authentication](documents/authentication.md)
 
 Methods
@@ -101,6 +87,13 @@ Methods
 Data structures
 * [Barcode](documents/barcode.md)
 * [BarcodeInfo](documents/barcodeInfo.md)
+
+
+Handling errors
+---------------
+
+If TAGO is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
 
 
 OData Queries
@@ -124,6 +117,11 @@ Below is example of OData parameters applied to URL requests to do some useful o
 
 
 More information on URI conventions can be found here: [OData: URI Conventions](http://www.odata.org/documentation/uri-conventions)
+
+Change Policy
+----------------
+
+We reserves the right to add new attributes and resources to the API without advance notice. Breaking changes such as removing or renaming an attribute, may happen on an existing version of the API with two weeks notice. Major structural changes will only happen within the context of a version update.
 
 
 Help us make it better
