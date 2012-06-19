@@ -91,10 +91,16 @@ In case if particular API method failed, you will receive response with error st
 API reference
 -----------------
 
-* [Authentication](https://github.com/tagomobile/api/blob/master/documents/authentication.md)
-* [Barcodes](https://github.com/tagomobile/api/blob/master/documents/barcodes.md)
-* [Folders](https://github.com/tagomobile/api/blob/master/documents/folders.md)
-* [Analytics](https://github.com/tagomobile/api/blob/master/documents/analytics.md)
+* [Authentication](documents/authentication.md)
+
+Methods
+* [Barcodes](documents/barcodes.md)
+* [Folders](documents/folders.md)
+* [Analytics](documents/analytics.md)
+
+Data structures
+* [Barcode](documents/barcode.md)
+* [BarcodeInfo](documents/barcodeInfo.md)
 
 
 OData Queries
