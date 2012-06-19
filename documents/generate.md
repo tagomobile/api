@@ -9,7 +9,7 @@ This method will generate url or text code using single API call and without add
 * `GET /generate/?type=text&text=My%20text&format=png&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
 <br />
 
-Sample:
+Example:
 
 <a>http://www.tagomobile.com/api/v1/generate?type=url&url=http://google.com&format=png&apiKey='303kfd0-2223334w3-3243434-224324"</a>
 
