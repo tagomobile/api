@@ -28,9 +28,9 @@ Read the [Authentication Guide](https://github.com/tagomobile/api/blob/master/do
 Data formats
 ----------------
 
-Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`).  You must supply Content-Type and Accept header on all requests.
+Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`). You must supply Content-Type and Accept header on all requests.
 
-If query to API does not specify media type, we tread data as **JSON by default**.
+If query to API does not specify media type, we treat data as **JSON by default**.
 
 
 Making a request
@@ -43,7 +43,8 @@ To make a request for all barcodes on your account, you need to append the barco
 ```shell
 curl http://api.tagomobile.com/v1/barcodes
   -H 'X-ApiKey: ApiKey=apiKey'
-  -H 'Accept: application/json'
+  -d '{"type": "url", "folderName": "Default","isTrackable": true, "Url": {"Url": "http://google.com"} }
+  -X POST
 ```
 
 Check out this tutorial to see how make calls to our RESTfull API from Javascript, C#, PHP, Ryby, Python and Java:
