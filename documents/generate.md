@@ -44,13 +44,13 @@ Trackable code will be added into the account automatically.
 
 For Non-Trackable you could optioanlly specify if code needed to be added it into the account or not. If not specified, code will be added by default.
 
-* `POST /generate?add={bool}` generate barcode. 'add' parameter is 'true' by default.
+* `POST /generate?add={bool}&format={format}&size={size}&errorCorrection={level}` generate barcode. 'add' parameter is 'true' by default.
 
 Data type: [Barcode](barcode.md)
 
 Request:
 
-    POST /generate?add=true
+    POST /generate?add=true&format=png
 
 ```json
 {
