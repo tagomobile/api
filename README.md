@@ -81,6 +81,7 @@ General
 * [Authentication](api/blob/master/documents/authentication.md)
 
 Methods
+* [Generate](api/blob/master/documents/generate.md)
 * [Barcodes](api/blob/master/documents/barcodes.md)
 * [Folders](api/blob/master/documents/folders.md)
 * [Analytics](api/blob/master/documents/analytics.md)
