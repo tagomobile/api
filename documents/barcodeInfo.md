@@ -5,32 +5,17 @@ Barcodes are represented as JSON or XML objects with specific keys.
 
 **Examples**
 
-Barcode:
-
 ```json
 {
-    "type": "url", 
     "id": "2232",
-    "createdDate" : "23/07/2012",
+    "type": "url", 
+    "folderId": "12321",
+    "isTrackable": true,
+    "geoEnabled": false,
     "shortLink": "http://tago.ca/abc",
+    "label": "magazine",
     "targetUrl": "http://google.com",
-    "folderName": "Default",
-    "isTrackable": true, 
-}
-```
-
-Text Barcode:
-
-
-```json
-{
-    "type": "text", 
-    "folderName": "Default",
-    "isTrackable": true, 
-    "Text": 
-        { 
-            "Text": "Your text goes here..."
-        } 
+    "createdDate" : "23/07/2012"
 }
 ```
 
