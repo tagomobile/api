@@ -91,6 +91,11 @@ Status: 200 OK
 Listing Barcodes
 ----
 
+There is two ways you can get list of barcodes. `GET /barcodes` method retrurn list of [BarcodeInfo](barcodeInfo.md) objcects, which contain generaral information for barcode. To get barcode type specific data, you will need to use `GET /barcodes/{id}` method. 
+
+`GET /barcodes/full` method return list of [Barcode](barcode.md) objects, which conatins barcode type specific information. Depends on numbert of barcodes in your account, `GET /barcodes` generally perform faster than `GET /barcodes/full`.
+
+
 #### Get list with general barcodes information
 
 * `GET /barcodes` return list of all barcodes.
@@ -117,10 +122,6 @@ Data type: [Barcode](barcode.md)
 **Sample**
 
 * http://testv2.tago.ca/api/barcodes/full?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-
-
-`GET /barcodes` return general information for all barcodes. To get barcode type specific data, you need to use `GET /barcodes/{id}` method. Or you can use `GET /barcodes/full` method, which behave the same, but return list of [Barcode](barcode.md) objects, which conatins barcode type specific information.
-Depends on numbert of barcodes in your account, `GET /barcodes` generally perform faster than `GET /barcodes/full`.
 
 
 Updating Barcodes
