@@ -100,6 +100,21 @@ Get list with general barcodes information
 
 Data type: [BarcodeInfo](barcodeInfo.md)
 
+```json
+[
+  {
+    "shortLink": "http://tago.ca/EUd",
+    "label": "Magazine",
+    "folderId": 16771,
+    "targetUrl": "",
+    "id": 24798,
+    "isTrackable": true,
+    "type": "text"
+    "createdDate": "14/12/2012"
+  }
+]
+```
+
 Get list with full barcodes information
 
 * `GET /barcodes/full` return list of all barcodes.
@@ -109,36 +124,26 @@ Get list with full barcodes information
 
 Data type: [Barcode](barcode.md)
 
-<br />
-
-[BarcodeInfo](barcodeInfo.md)
-
 ```json
-[
-  {
-    "shortLink": "http://tago.ca/EUd",
-    "label": "",
-    "folderId": 16771,
-    "targetUrl": "",
-    "id": 24798,
-    "isTrackable": true,
-    "type": "text"
-    "createdDate": "14/12/2012"
-  },
-  {
-    "shortLink": "http://tago.ca/zSZ",
-    "label": "",
-    "folderId": 16771,
-    "targetUrl": "http://google.com",
-    "id": 24849,
-    "isTrackable": true,
-    "type": "url"
-    "createdDate": "14/12/2012"
+{
+  "folderId": 16771,
+  "id": 24906,
+  "isTrackable": true,
+  "type": "text",
+  "label": "Magazine",
+  "geoEnabled": false,
+  "createdDate": "24/03/2012",
+  "shortLink": "http://tago.ca/EUd",
+  "text": {
+    "text": "Your content"
   }
-]
+}
 ```
 
-`GET /barcodes` return general information for all barcodes. To get barcode type specific data, you need to use `GET /barcodes/{id}` method. Also you can use `GET /barcodes/full` method, which behave the same, but return list of [Barcode](barcode.md) objects, which conatins barcode type specific information.
+<br />
+
+
+`GET /barcodes` return general information for all barcodes. To get barcode type specific data, you need to use `GET /barcodes/{id}` method. Or you can use `GET /barcodes/full` method, which behave the same, but return list of [Barcode](barcode.md) objects, which conatins barcode type specific information.
 Depends on numbert of barcodes in your account, `GET /barcodes` generally perform faster than `GET /barcodes/full`.
 
 
