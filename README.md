@@ -88,6 +88,7 @@ Methods
 Data structures
 * [Barcode](api/blob/master/documents/barcode.md)
 * [BarcodeInfo](api/blob/master/documents/barcodeInfo.md)
+* [Folder] (api/blob/master/documents/folder.md)
 * [Scans] (api/blob/master/documents/scans.md)
 * [DayScans] (api/blob/master/documents/scans.md#dayScans)
 * [ScansDetails] (api/blob/master/documents/scans.md#scansDetails)
