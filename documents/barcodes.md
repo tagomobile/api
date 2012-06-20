@@ -91,13 +91,27 @@ Status: 200 OK
 Listing Barcodes
 ----
 
+Get list with general barcodes information
+
 * `GET /barcodes` return list of all barcodes.
 * `GET /barcodes?folderId={id}` return all barcodes from specific folder by folder id.
 * `GET /barcodes?folderName={name}` return all barcodes from speicif folder by folder name.
 * `GET /barcodes$skip={skip}&$top={top}` return custom range of barcodes.
-<br />
 
 Data type: [BarcodeInfo](barcodeInfo.md)
+
+Get list with full barcodes information
+
+* `GET /barcodes/full` return list of all barcodes.
+* `GET /barcodes/full?folderId={id}` return all barcodes from specific folder by folder id.
+* `GET /barcodes/full?folderName={name}` return all barcodes from speicif folder by folder name.
+* `GET /barcodes/full$skip={skip}&$top={top}` return custom range of barcodes.
+
+Data type: [Barcode](barcode.md)
+
+<br />
+
+[BarcodeInfo](barcodeInfo.md)
 
 ```json
 [
