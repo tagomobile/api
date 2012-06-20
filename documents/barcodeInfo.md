@@ -34,6 +34,13 @@ Barcode general:
       <th>Comment</th>
     </tr>
     <tr>
+        <td>id</td>
+        <td>long</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>Unique barcode id. Signed 64-bit integers</td>
+    </tr>
+    <tr>
         <td>type</td>
         <td>enum</td>
         <td>no</td>
@@ -46,13 +53,6 @@ Barcode general:
         <td>no</td>
         <td>yes</td>
         <td>Specify if should be created trackable or non-tackable(Embedded) barcode.</td>
-    </tr>
-    <tr>
-        <td>id</td>
-        <td>long</td>
-        <td>yes</td>
-        <td>no</td>
-        <td>Unique barcode id. Signed 64-bit integers</td>
     </tr>
     <tr>
         <td>targetUrl</td>
