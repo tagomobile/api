@@ -88,7 +88,9 @@ Methods
 Data structures
 * [Barcode](api/blob/master/documents/barcode.md)
 * [BarcodeInfo](api/blob/master/documents/barcodeInfo.md)
-
+* [Scans] (api/blob/master/documents/scans.md)
+* [DayScans] (api/blob/master/documents/scans.md#dayScans)
+* [ScansDetails] (api/blob/master/documents/scans.md#scansDetails)
 
 Handling errors
 ---------------
