@@ -6,7 +6,7 @@ BarcodeInfo data structure is represented as JSON or XML objects with specific k
 BarcodeInfo structure is used only in Listing Barcodes `GET /barcodes` method.
 It contains general information about barcode. Also, it has additional parameter `targetUrl` specific only for URL type of barcode and presented in this structure only for convinience of API use. Hence, to get URL spcecific information from data returned by Listing Barcodes method, you don't need to do any additional calls. 
 
-For all other types of barcodes, you need to do separate code for each barcode to get barcode specifi information. Or use `GET /barcodes/full` method to extract the most full data for all barcodes. Depends on number of codes in your account, `GET /barcodes/full` method is generally perform slower than `GET /barcoes`.
+For all other types of barcodes, you need to do separate code for each barcode to get barcode specifi information. Or use `GET /barcodes/full` method to extract the most full data for all barcodes. Depends on number of codes in your account, `GET /barcodes/full` method is generally perform slower than `GET /barcodes`.
 
 **Examples**
 
