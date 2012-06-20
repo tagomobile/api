@@ -91,7 +91,7 @@ Status: 200 OK
 Listing Barcodes
 ----
 
-Get list with general barcodes information
+#### Get list with general barcodes information
 
 * `GET /barcodes` return list of all barcodes.
 * `GET /barcodes?folderId={id}` return all barcodes from specific folder by folder id.
@@ -100,22 +100,12 @@ Get list with general barcodes information
 
 Data type: [BarcodeInfo](barcodeInfo.md)
 
-```json
-[
-  {
-    "shortLink": "http://tago.ca/EUd",
-    "label": "Magazine",
-    "folderId": 16771,
-    "targetUrl": "",
-    "id": 24798,
-    "isTrackable": true,
-    "type": "text"
-    "createdDate": "14/12/2012"
-  }
-]
-```
+**Sample**
 
-Get list with full barcodes information
+* http://testv2.tago.ca/api/barcodes?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+
+
+#### Get list with full barcodes information
 
 * `GET /barcodes/full` return list of all barcodes.
 * `GET /barcodes/full?folderId={id}` return all barcodes from specific folder by folder id.
@@ -124,21 +114,9 @@ Get list with full barcodes information
 
 Data type: [Barcode](barcode.md)
 
-```json
-{
-  "folderId": 16771,
-  "id": 24906,
-  "isTrackable": true,
-  "type": "text",
-  "label": "Magazine",
-  "geoEnabled": false,
-  "createdDate": "24/03/2012",
-  "shortLink": "http://tago.ca/EUd",
-  "text": {
-    "text": "Your content"
-  }
-}
-```
+**Sample**
+
+* http://testv2.tago.ca/api/barcodes/full?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 <br />
 
