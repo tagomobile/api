@@ -1,5 +1,7 @@
 Scans Type
-====
+-----------
+
+<br/>
 
 **Examples**
 
@@ -10,8 +12,7 @@ Scans Type
   }
 ```
 
-Refference
-----
+### Refference
 
 <table>
     <tr>
@@ -34,3 +35,41 @@ Refference
     </tr>
 </table>
 <br />
+
+DayScans Type
+---
+
+<br/>
+
+**Examples**
+
+```json
+{
+    "date": "2012-03-24T11:00:39"
+    "uniqueScans": 723,
+    "totalScans": 689
+  }
+```
+
+### Refference
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Read-only</th>
+      <th>Comment</th>
+    </tr>
+    <tr>
+        <td>uniqueScans</td>
+        <td>int</td>
+        <td>yes</td>
+        <td>Number of unique QR Code scans</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>int</td>
+        <td>totalScans</td>
+        <td>Number of total QR Code scans</td>
+    </tr>
+</table>
