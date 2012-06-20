@@ -57,9 +57,9 @@ Request:
     "type": "url", 
     "folderName": "Default",
     "isTrackable": true, 
-    "Url": 
+    "url": 
         { 
-            "Url": "http://google.com"
+            "url": "http://google.com"
         } 
 }
 
