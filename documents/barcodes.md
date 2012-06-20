@@ -118,7 +118,6 @@ Data type: [Barcode](barcode.md)
 
 * http://testv2.tago.ca/api/barcodes/full?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
-<br />
 
 `GET /barcodes` return general information for all barcodes. To get barcode type specific data, you need to use `GET /barcodes/{id}` method. Or you can use `GET /barcodes/full` method, which behave the same, but return list of [Barcode](barcode.md) objects, which conatins barcode type specific information.
 Depends on numbert of barcodes in your account, `GET /barcodes` generally perform faster than `GET /barcodes/full`.
