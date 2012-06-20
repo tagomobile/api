@@ -112,13 +112,53 @@ ScanDetails Type
         <td>Date and time QR Code was scanned</td>
     </tr>
     <tr>
-        <td>uniqueScans</td>
-        <td>int</td>
-        <td>Number of unique QR Code scans</td>
+        <td>barcodeType</td>
+        <td>string</td>
+        <td>Type of barcode. Values: url, text, contact</td>
     </tr>
     <tr>
-        <td>totalScans</td>
-        <td>int</td>
-        <td>Number of total QR Code scans</td>
+        <td>barcodeLabel</td>
+        <td>string</td>
+        <td>Optional barcode label</td>
+    </tr>
+    <tr>
+        <td>barcodeContent</td>
+        <td>string</td>
+        <td>Short description of barcode content</td>
+    </tr>
+    <tr>
+        <td>folderName</td>
+        <td>string</td>
+        <td>Barcode folder name</td>
+    </tr>
+    <tr>
+        <td>scanDateTime</td>
+        <td>dateTime</td>
+        <td>Date and time QR Code was scanned</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>string</td>
+        <td>Name of city where QR Code was scanned</td>
+    </tr>
+    <tr>
+        <td>country</td>
+        <td>string</td>
+        <td>Name of country where QR Code was scanned</td>
+    </tr>
+    <tr>
+        <td>device</td>
+        <td>string</td>
+        <td>Name of device used to scan QR Code</td>
+    </tr>
+    <tr>
+        <td>ipAddress</td>
+        <td>string</td>
+        <td>IpAddress of device which scanned QR Code</td>
+    </tr>
+    <tr>
+        <td>provider</td>
+        <td>string</td>
+        <td>Device internet provicer name</td>
     </tr>
 </table>
