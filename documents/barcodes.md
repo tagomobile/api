@@ -120,7 +120,6 @@ Data type: [Barcode](barcode.md)
 
 <br />
 
-
 `GET /barcodes` return general information for all barcodes. To get barcode type specific data, you need to use `GET /barcodes/{id}` method. Or you can use `GET /barcodes/full` method, which behave the same, but return list of [Barcode](barcode.md) objects, which conatins barcode type specific information.
 Depends on numbert of barcodes in your account, `GET /barcodes` generally perform faster than `GET /barcodes/full`.
 
