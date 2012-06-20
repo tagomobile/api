@@ -105,7 +105,7 @@ Data type: [BarcodeInfo](barcodeInfo.md)
     "shortLink": "http://tago.ca/EUd",
     "label": "",
     "folderId": 16771,
-    "url": "",
+    "targetUrl": "",
     "id": 24798,
     "isTrackable": true,
     "type": "text"
@@ -115,7 +115,7 @@ Data type: [BarcodeInfo](barcodeInfo.md)
     "shortLink": "http://tago.ca/zSZ",
     "label": "",
     "folderId": 16771,
-    "url": "http://google.com",
+    "targetUrl": "http://google.com",
     "id": 24849,
     "isTrackable": true,
     "type": "url"
@@ -123,6 +123,9 @@ Data type: [BarcodeInfo](barcodeInfo.md)
   }
 ]
 ```
+
+`GET /barcodes` return general information for all barcodes. To get barcode type specific data, you need to use `GET /barcodes/{id}` method. Also you can use `GET /barcodes/full` method, which behave the same, but return list of [Barcode](barcode.md) objects, which conatins barcode type specific information.
+Depends on numbert of barcodes in your account, `GET /barcodes` generally perform faster than `GET /barcodes/full`.
 
 
 Updating Barcodes
