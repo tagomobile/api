@@ -161,4 +161,4 @@ Deleting barocdes
 ----
 * `DELETE /barcodes/{id}` delete barcode.
 
-Will delete the barcode by it id and return `204 No Content` if that was successful. If the user does not have access to delete the barcode, you'll see `403 Forbidden`.
+Will delete the barcode by it id and return `200 OK` if that was successful. If the user does not have access to delete the barcode, you'll see `403 Forbidden`.
