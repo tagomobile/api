@@ -69,6 +69,11 @@ Getting Barcodes
 
 Data type: [Barcode](barcode.md)
 
+**Example**
+
+* http://testv2.tago.ca/api/barcodes/24787?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+
+
 ```
 Status: 200 OK
 ```
