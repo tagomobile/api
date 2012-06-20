@@ -2,12 +2,6 @@ Folder Type
 ========
 
 <br />
-
-        public long Id { get; set; }
-                public string Name { get; set; }
-                public string Description { get; set; }
-                public DateTime CreatedOn { get; set; }
-                public int BarcodeCount { get; set; }
                 
 **Example**
 
@@ -16,7 +10,6 @@ Folder Type
 
     "id": 2232,
     "name": "Default", 
-    "folderId": 1232",
     "createdOn": "2012-03-24T11:00:39-05:00",
     "createdBy": "",
     "barcodesCount": 21,
@@ -41,63 +34,42 @@ Refference
         <td>long</td>
         <td>yes</td>
         <td>no</td>
-        <td>Unique barcode id. Signed 64-bit integers</td>
+        <td>Unique folder id. Signed 64-bit integers</td>
     </tr>
     <tr>
-        <td>type</td>
-        <td>enum</td>
-        <td>no</td>
-        <td>yes</td>
-        <td>Type of barcode. Values: url, text, contact</td>
-    </tr>
-    <tr>
-        <td>isTrackable</td>
-        <td>bool</td>
-        <td>no</td>
-        <td>yes</td>
-        <td>Specify if should be created trackable or non-tackable(Embedded) barcode.</td>
-    </tr>
-    <tr>
-        <td>targetUrl</td>
+        <td>name</td>
         <td>string</td>
-        <td>yes</td>
         <td>no</td>
-        <td>If barcode type is 'url', than this field will conatin target url. Otherwise empty</td>
+        <td>yes</td>
+        <td>Folder name</td>
     </tr>
     <tr>
-        <td>shortLink</td>
-        <td>string</td>
-        <td>yes</td>
-        <td>no</td>
-        <td>If barcode is trackable, than this field will contain it short url. Otherwise empty</td>
-    </tr>
-    <tr>
-        <td>createdDate</td>
+        <td>createdOn</td>
         <td>date</td>
         <td>yes</td>
         <td>no</td>
-        <td>The time the barcode was created</td>
+        <td>Date and time folder was created. Format: 2012-03-24T11:00:39-05:00</td>
     </tr>
     <tr>
-        <td>folderId</td>
-        <td>int</td>
-        <td>no</td>
-        <td>no</td>
-        <td>Folder id where to add barcode</td>
-    </tr>
-    <tr>
-        <td>label</td>
+        <td>createdBy</td>
         <td>string</td>
+        <td>yes</td>
         <td>no</td>
-        <td>no</td>
-        <td>Optionally set barcode lable</td>
+        <td>Will conain sub-account name created the barcode, in case if current account has sub-accounts</td>
     </tr>
     <tr>
-        <td>geoEnabled</td>
-        <td>bool</td>
+        <td>barcodesCount</td>
+        <td>int</td>
+        <td>yes</td>
         <td>no</td>
+        <td>Total number of barcodes in folder</td>
+    </tr>
+    <tr>
+        <td>totalScans</td>
+        <td>int</td>
+        <td>yes</td>
         <td>no</td>
-        <td>Specify if geo-location should be requested from user, once he scan QR Code. Default: false</td>
+        <td>Number of total scans for all barcodes in folder</td>
     </tr>
 </table>
 <br />
