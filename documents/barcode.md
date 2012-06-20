@@ -77,25 +77,25 @@ Barcode general:
         <td>Unique barcode id. Signed 64-bit integers</td>
     </tr>
     <tr>
-        <td>targetUlr</td>
-        <td>string</td>
-        <td>yes</td>
-        <td>no</td>
-        <td>If barcode type is 'url', than this field will conatin target url. Otherwise empty. Duplicate of URL Barcode field, intoduced for convinience purpose only</td>
-    </tr>
-    <tr>
         <td>shortLink</td>
         <td>string</td>
         <td>yes</td>
         <td>no</td>
         <td>If barcode is trackable, than this field will contain it short url. Otherwise empty</td>
     </tr>
-        <tr>
+    <tr>
         <td>createdDate</td>
         <td>date</td>
         <td>yes</td>
         <td>no</td>
         <td>The time the barcode was created</td>
+    </tr>
+    <tr>
+        <td>createdBy</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>Will conain sub-account name created the barcode, in case if current account has sub-accounts.</td>
     </tr>
     <tr>
         <td>folderId</td>
