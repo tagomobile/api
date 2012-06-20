@@ -78,16 +78,16 @@ Location: http://api.tagomobile.com/v1/barcodes
 API reference
 -----------------
 General
-* [Authentication](documents/authentication.md)
+* [Authentication](api/blob/master/documents/authentication.md)
 
 Methods
 * [Barcodes](api/blob/master/documents/barcodes.md)
-* [Folders](documents/folders.md)
-* [Analytics](documents/analytics.md)
+* [Folders](api/blob/master/documents/folders.md)
+* [Analytics](api/blob/master/documents/analytics.md)
 
 Data structures
-* [Barcode](documents/barcode.md)
-* [BarcodeInfo](documents/barcodeInfo.md)
+* [Barcode](api/blob/master/documents/barcode.md)
+* [BarcodeInfo](api/blob/master/documents/barcodeInfo.md)
 
 
 Handling errors
