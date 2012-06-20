@@ -3,7 +3,7 @@ Scans Type
 
 <br/>
 
-**Examples**
+**Example**
 
 ```json
 {
@@ -38,7 +38,7 @@ DayScans Type
 
 <br/>
 
-**Examples**
+**Example**
 
 ```json
 {
@@ -80,15 +80,15 @@ ScanDetails Type
 
 <br/>
 
-**Examples**
+**Example**
 
 ```json
 {
-    barcodeId: 2032,
-    barcodeType: "url",
-    barcodeLabel: "magazine",
-    barcodeContent: "http://google.com",
-    folderName: "Default",
+    "barcodeId": 2032,
+    "barcodeType": "url",
+    "barcodeLabel": "magazine",
+    "barcodeContent": "http://google.com",
+    "folderName": "Default",
     "scanDateTime": "2012-03-24T11:00:39-05:00",
     "city": "San Francisco",
     "country": "USA",
