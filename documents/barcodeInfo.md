@@ -27,9 +27,6 @@ For all other types of barcodes, you need to do separate code for each barcode t
 Refference
 ----
 
-
-Barcode general:
-
 <table>
     <tr>
       <th>Name</th>
