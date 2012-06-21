@@ -3,7 +3,7 @@ Analytics
 
 <br/>
 
-Compound Statistics
+General Statistics
 ------
 
 By all barcodes:
