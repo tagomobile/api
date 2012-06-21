@@ -6,9 +6,15 @@ Analytics
 General Analytics
 ------
 
-* `GET /analytics` return scans statistics for all barcodes in account for all time
+* `GET /analytics` return scans statistics for all barcodes for all time
+* `GET /analytics?fromDate={date}&toDate={date}` return scans statistics for all barcodes for selected date period
 
-Data type: [Scans](scans.md)
+Request optional parameters:
+
+* fromDate - Start date. Format: "YYYY-MM-DD"
+* endDate - End date. Format: "YYYY-MM-DD"
+
+Response data type: [Scans](scans.md)
 
 **Example**
 
