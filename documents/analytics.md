@@ -14,7 +14,7 @@ By specific barcode:
 * `GET /analytics/{id}` return scans statistics for specific barcode by it id for all time
 * `GET /analytics/{id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it id for selected date period
 
-By folder:
+By specific folder:
 * `GET /analytics?folderId={id}` return scans statistics for specific folder by it id for all time
 * `GET /analytics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by it id for selected date period
 
