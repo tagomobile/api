@@ -1,7 +1,7 @@
 Folder Type
 ========
 
-<br />
+<br /> 
                 
 **Example**
 
