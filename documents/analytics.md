@@ -3,11 +3,16 @@ Analytics
 
 <br/>
 
-General Analytics
+Account Analytics
 ------
 
+All barcodes:
 * `GET /analytics` return scans statistics for all barcodes for all time
 * `GET /analytics?fromDate={date}&toDate={date}` return scans statistics for all barcodes for selected date period
+
+Specific barcode:
+* `GET /analytics/{id}` return scans statistics for specific barcode by it id for all time
+* `GET /analytics/{id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it id for selected date period
 
 Request optional parameters:
 
