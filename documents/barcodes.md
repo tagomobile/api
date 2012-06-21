@@ -123,7 +123,7 @@ Data type: [BarcodeInfo](barcodeInfo.md)
 * `GET /barcodes/full` return list of all barcodes.
 * `GET /barcodes/full?folderId={id}` return all barcodes from specific folder by folder id.
 * `GET /barcodes/full?folderName={name}` return all barcodes from speicif folder by folder name.
-* `GET /barcodes/full$skip={skip}&$top={top}` return custom range of barcodes.
+* `GET /barcodes/full?skip={skip}&$top={top}` return custom range of barcodes.
 
 Data type: [Barcode](barcode.md)
 
