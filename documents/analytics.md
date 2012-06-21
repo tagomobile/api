@@ -6,7 +6,7 @@ Analytics
 General Analytics
 ------
 
-* `GET /analytics` return scans statistics for all barcodes in account
+* `GET /analytics` return scans statistics for all barcodes in account for all time
 
 Data type: [Scans](scans.md)
 
