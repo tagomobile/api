@@ -15,8 +15,8 @@ By specific barcode:
 * `GET /analytics/{id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it id for selected date period
 
 By folder:
-* `GET /analytics/folder/{id}` return scans statistics for specific folder by it id for all time
-* `GET /analytics/folder/{id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by it id for selected date period
+* `GET /analytics?folderId={id}` return scans statistics for specific folder by it id for all time
+* `GET /analytics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by it id for selected date period
 
 Request optional parameters:
 
@@ -36,8 +36,8 @@ By specific barcode:
   * http://testv2.tago.ca/api/analytics/25043?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
 
 By specific folder: 
-  * http://testv2.tago.ca/api/analytics/folder/25043?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-  * http://testv2.tago.ca/api/analytics/folder/25043?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
+  * http://testv2.tago.ca/api/analytics?folderId=25043&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+  * http://testv2.tago.ca/api/analytics?folderId=25043&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
 
 Response:
 
