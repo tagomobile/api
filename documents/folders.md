@@ -68,23 +68,18 @@ Status: 200 OK
 }
 ```
 
-Creating Barocdes
+Creating Folders
 ----
-* `POST /barcodes` add barcode.
+* `POST /folders` add folder.
 
-Data type: [Barcode](barcode.md)
+Data type: [Folder](folder.md)
 
 Request JSON data:
 
 ```json
 {
-    "type": "url", 
-    "folderName": "Default",
-    "isTrackable": true, 
-    "Url": 
-        { 
-            "Url": "http://google.com"
-        } 
+
+    "name": "New Folder", 
 }
 
 ```
@@ -96,33 +91,29 @@ Status: 201 Created
 
 ```json
 {
-    "shortLink": "http://tago.ca/MYj",
-    "label": "",
-    "folderId": 16771,
-    "id": 24906,
-    "isTrackable": true,
-    "type": "url"
+    "id": 2232,
+    "name": "New Folder", 
+    "createdOn": "2012-03-24T11:00:39-05:00",
+    "createdBy": "",
+    "barcodesCount": 0,
+    "totalScans": 0
 }
 ```
 
-Updating Barcodes
+Updating Folders
 ----
-* `PUT /barcodes/{id}` update barcode content.
+* `PUT /folders/{id}` change folder name.
 <br />
 
-Data type: [Barcode](barcode.md)
+Data type: [Folder](folder.md)
 
 Request JSON data:
 
 ```json
 {
-    "type": "text", 
-    "Text": 
-        { 
-            "Text": "New text goes here..."
-        } 
-}
 
+    "name": "Changed Name", 
+}
 ```
 
 Response:
@@ -131,10 +122,20 @@ Response:
 Status: 200 OK
 ```
 
+```json
+{
+    "id": 2232,
+    "name": "Changed Name", 
+    "createdOn": "2012-03-24T11:00:39-05:00",
+    "createdBy": "",
+    "barcodesCount": 0,
+    "totalScans": 0
+}
+```
 
-
-Deleting barocdes
+Deleting folders
 ----
-* `DELETE /barcodes/{id}` delete barcode.
+* `DELETE /folders/{id}` delete folder by id.
+* `DELETE /folders?folderName={name}` delete folder by name.
 
-Will delete the barcode by it id and return `200 OK` if that was successful. If the user does not have access to delete the barcode, you'll see `403 Forbidden`.
+Will delete the folder by it id or name and return `200 OK` if that was successful. If the user does not have access to delete the folder, you'll see `403 Forbidden`.
