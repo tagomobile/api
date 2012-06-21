@@ -25,7 +25,9 @@ Request optional parameters:
 
 Response data type: [Scans](scans.md)
 
-**Example**
+<br/>
+
+**Examples**
 
 For all barcodes:
   * http://testv2.tago.ca/api/analytics?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
