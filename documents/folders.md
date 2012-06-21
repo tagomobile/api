@@ -49,7 +49,7 @@ Data type: [Folder](folder.md)
 **Example**
 
 * http://testv2.tago.ca/api/folders/16771?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/folders?folderName=Default?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/folders?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 ```
