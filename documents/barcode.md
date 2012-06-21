@@ -14,7 +14,7 @@ URL Barcode:
 {
     "type": "url", 
     "id": "2232",
-    "createdDate" : "23/07/2012",
+    "createdOn" : "2012-03-24T11:00:39-05:00",
     "shortLink": "http://tago.ca/abc",
     "targetUrl": "http://google.com",
     "folderName": "Default",
@@ -84,11 +84,11 @@ Barcode general:
         <td>If barcode is trackable, than this field will contain it short url. Otherwise empty</td>
     </tr>
     <tr>
-        <td>createdDate</td>
+        <td>createdOn</td>
         <td>date</td>
         <td>yes</td>
         <td>no</td>
-        <td>The time the barcode was created</td>
+        <td>The time the barcode was created. Format: 2012-03-24T11:00:39-05:00</td>
     </tr>
     <tr>
         <td>createdBy</td>
