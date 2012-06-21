@@ -24,6 +24,7 @@ Response data type: [Scans](scans.md)
 **Example**
 
   * http://testv2.tago.ca/api/analytics?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+  * http://testv2.tago.ca/api/analytics/25043?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 Response:
 
