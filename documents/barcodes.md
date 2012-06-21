@@ -115,7 +115,7 @@ Data type: [BarcodeInfo](barcodeInfo.md)
 * http://testv2.tago.ca/api/barcodes?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 * http://testv2.tago.ca/api/barcodes?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 * http://testv2.tago.ca/api/barcodes?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/barcodes?skip=0&take=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/barcodes?skip=0&top=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 #### Get list with full barcodes information
