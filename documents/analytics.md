@@ -11,8 +11,8 @@ General Analytics
 
 Request optional parameters:
 
-* fromDate - Start date. Format: "YYYY-MM-DD"
-* endDate - End date. Format: "YYYY-MM-DD"
+`fromDate` - Start date. Format: "YYYY-MM-DD" <br/>
+`toDate` - End date. Format: "YYYY-MM-DD"
 
 Response data type: [Scans](scans.md)
 
