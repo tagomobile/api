@@ -106,13 +106,16 @@ There is two ways you can get list of barcodes. `GET /barcodes` method retrurn l
 * `GET /barcodes` return list of all barcodes.
 * `GET /barcodes?folderId={id}` return all barcodes from specific folder by folder id.
 * `GET /barcodes?folderName={name}` return all barcodes from speicif folder by folder name.
-* `GET /barcodes$skip={skip}&$top={top}` return custom range of barcodes.
+* `GET /barcodes?skip={skip}&$top={top}` return custom range of barcodes.
 
 Data type: [BarcodeInfo](barcodeInfo.md)
 
 **Example**
 
+* http://testv2.tago.ca/api/barcodes?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 * http://testv2.tago.ca/api/barcodes?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/barcodes?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/barcodes?skip=0&take=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 #### Get list with full barcodes information
