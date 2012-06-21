@@ -15,8 +15,8 @@ Data type: [Folder](folder.md)
 
 **Example**
 
-* http://testv2.tago.ca/api/folders
-* http://testv2.tago.ca/api/folders?skip=0&top=10
+* http://testv2.tago.ca/api/folders?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/folders?skip=0&top=10?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 ```
 Status: 200 OK
