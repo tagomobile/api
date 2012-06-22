@@ -149,7 +149,7 @@ Barcode general:
     <tr>
         <td>content</td>
         <td>object</td>
-        <td>no</td>
+        <td>yes</td>
         <td>no</td>
         <td>Currently API supports only 3 major types of barcodes: URL, Text and Contact Info. If type of barocode is different from this major types, than will be retured <a href="#content">Content</a> data oject, which contains short description of barcode content</td>
     </tr>
@@ -280,6 +280,27 @@ Contact Info barcode:
     </tr>
     
 </table>
+
+<a name="content"></a>
+Сontent (for all other types of barcodes):
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Read-only</th>
+      <th>Required</th>
+      <th>Comment</th>
+    </tr>
+    <tr>
+        <td>text</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>no</td>
+        <td>Short description of barcode content</td>
+    </tr>
+</table>
+<br />
 
 
 
