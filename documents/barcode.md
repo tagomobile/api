@@ -222,7 +222,7 @@ Contact Info barcode:
         <td>organization</td>
         <td>string</td>
         <td>no</td>
-        <td>Oganization of company name</td>
+        <td>Organization of company name</td>
     </tr>
     <tr>
         <td>title</td>
