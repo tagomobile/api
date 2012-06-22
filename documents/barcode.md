@@ -146,6 +146,13 @@ Barcode general:
         <td>no</td>
         <td>Object with Contact Info barcode specific parameters. See <a href="#contact">Contact Info Barcode</a> specification below</td>
     </tr>
+    <tr>
+        <td>content</td>
+        <td>object</td>
+        <td>no</td>
+        <td>no</td>
+        <td>Currently API supports only 3 major types of barcodes: URL, Text and Contact Info. If type of barocode is different from this major types, than will be retured <a href="#content">Content</a> data oject, which contains short description of barcode content</td>
+    </tr>
 </table>
 <br />
 
