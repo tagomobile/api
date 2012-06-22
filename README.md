@@ -81,21 +81,19 @@ General
 * [Authentication](https://github.com/tagomobile/api/blob/master/documents/authentication.md)
 
 Methods
-* [Generate](api/blob/master/documents/generate.md)
-* [Barcodes](api/blob/master/documents/barcodes.md)
-* [Folders](api/blob/master/documents/folders.md)
-* [Analytics](api/blob/master/documents/analytics.md)
+* [Generate](https://github.com/tagomobile/api/blob/master/documents/generate.md)
+* [Barcodes](https://github.com/tagomobile/api/blob/master/documents/barcodes.md)
+* [Folders](https://github.com/tagomobile/api/blob/master/documents/folders.md)
+* [Analytics](https://github.com/tagomobile/api/blob/master/documents/analytics.md)
 
 Data structures
-* [Barcode](api/blob/master/documents/barcode.md)
-* [BarcodeInfo](api/blob/master/documents/barcodeInfo.md)
-* [Folder] (api/blob/master/documents/folder.md)
-* [Scans] (api/blob/master/documents/scans.md)
-* [DayScans] (api/blob/master/documents/scans.md#dayScans)
-* [ScansDetails] (api/blob/master/documents/scans.md#scanDetails)
+* [Barcode](https://github.com/tagomobile/api/blob/master/documents/barcode.md)
+* [BarcodeInfo](https://github.com/tagomobile/api/blob/master/documents/barcodeInfo.md)
+* [Folder] (https://github.com/tagomobile/api/blob/master/documents/folder.md)
+* [Scans] (https://github.com/tagomobile/api/blob/master/documents/scans.md)
+* [DayScans] (https://github.com/tagomobile/api/blob/master/documents/scans.md#dayScans)
+* [ScansDetails] (https://github.com/tagomobile/api/blob/master/documents/scans.md#scanDetails)
 
-Handling errors
----------------
 
 If TAGO is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
 In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
