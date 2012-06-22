@@ -11,8 +11,8 @@ This method will generate url or text code using single API call and without add
 
 **Examples**
 
-* <a>http://www.tagomobile.com/api/v1/generate?type=url&url=http://google.com&format=png&apiKey='303kfd0-2223334w3-3243434-224324"</a>
-* <a>http://www.tagomobile.com/api/v1/generate?type=text&text=Hello%20World!&format=png&apiKey='303kfd0-2223334w3-3243434-224324"</a>
+* http://testv2.tago.ca/api/generate?type=url&url=http://google.com&format=png&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/generate?type=text&text=Hello%20World!&format=png&apiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 *Note: Provided API Key is for testing purposes only, do not use in production environment.
 
