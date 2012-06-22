@@ -92,7 +92,7 @@ Data structures
 * [Folder] (api/blob/master/documents/folder.md)
 * [Scans] (api/blob/master/documents/scans.md)
 * [DayScans] (api/blob/master/documents/scans.md#dayScans)
-* [ScansDetails] (api/blob/master/documents/scans.md#scansDetails)
+* [ScansDetails] (api/blob/master/documents/scans.md#scanDetails)
 
 Handling errors
 ---------------
