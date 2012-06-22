@@ -96,11 +96,13 @@ Status: 200 OK
 ```
 
 ```json
-{
+[
+ {
     "date": "2012-03-24T00:00:00-05:00",
     "uniqueScans": 723,
     "totalScans": 689
-  }
+ }
+]
 ```
 <br />
 
@@ -143,7 +145,8 @@ Status: 200 OK
 ```
 
 ```json
-{
+[
+ {
     "barcodeId": 2032,
     "barcodeType": "url",
     "barcodeLabel": "magazine",
@@ -155,7 +158,8 @@ Status: 200 OK
     "device": "iPhone",
     "ipAddress": "168.124.123.100",
     "provider": "ProviderInc.",
-}
+ }
+]
 ```
 
 
