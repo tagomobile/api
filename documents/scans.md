@@ -42,7 +42,7 @@ DayScans Type
 
 ```json
 {
-    "date": "2012-03-24T11:00:39-05:00",
+    "date": "2012-03-24T00:00:00-05:00",
     "uniqueScans": 723,
     "totalScans": 689
 }
