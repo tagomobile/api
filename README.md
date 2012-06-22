@@ -78,7 +78,7 @@ Location: http://api.tagomobile.com/v1/barcodes
 API reference
 -----------------
 General
-* [Authentication](https://github.com/tagomobile/api/api/blob/master/documents/authentication.md)
+* [Authentication](https://github.com/tagomobile/api/blob/master/documents/authentication.md)
 
 Methods
 * [Generate](api/blob/master/documents/generate.md)
