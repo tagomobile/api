@@ -281,6 +281,8 @@ Contact Info barcode:
     
 </table>
 
+<br/>
+
 <a name="content"></a>
 Сontent (for all other types of barcodes):
 
@@ -293,7 +295,7 @@ Contact Info barcode:
       <th>Comment</th>
     </tr>
     <tr>
-        <td>text</td>
+        <td>data</td>
         <td>string</td>
         <td>yes</td>
         <td>no</td>
