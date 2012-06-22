@@ -59,21 +59,25 @@ Status: 200 OK
 Daily Statistics
 ------
 
-For all barcodes:
-* `GET /analytics/daily?barcodeId={id}` return all scans statistics for specific barocde detailed by days.
-* `GET /analytics?daily?barcodeId={id}fromDate={date}&toDate={date}` return scans statistics for all barcodes for selected date period
-
 For specific barcode:
-* `GET /analytics/{id}` return scans statistics for specific barcode by it id for all time
-* `GET /analytics/{id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it id for selected date period
+
+* `GET /analytics/daily?barcodeId={id}` return all scans statistics detailed by days for specific barocde.
+* `GET /analytics?daily?barcodeId={id}fromDate={date}&toDate={date}` return scans statistics detailed by days for specific barocde for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
 
 For specific folder:
-* `GET /analytics?folderId={id}` return scans statistics for specific folder by it id for all time
-* `GET /analytics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by it id for selected date period
+
+* `GET /analytics/daily?folderId={id}` return all scans statistics detailed by days for specific folder.
+* `GET /analytics?daily?folderId={id}fromDate={date}&toDate={date}` return scans statistics detailed by days for specific folder for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
 
 **Statistics Examples**
 
+For specific barcode:
+
 * http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&fromDate=2012-04-17&toDate=2012-04-17&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+
+For specific folder:
 
 Request optional parameters:
 
