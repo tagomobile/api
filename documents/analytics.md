@@ -67,24 +67,27 @@ For specific barcode:
 For specific folder:
 
 * `GET /analytics/daily?folderId={id}` return all scans statistics detailed by days for specific folder.
-* `GET /analytics?daily?folderId={id}fromDate={date}&toDate={date}` return scans statistics detailed by days for specific folder for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
+* `GET /analytics?daily?folderId={id}&type=folder&fromDate={date}&toDate={date}` return scans statistics detailed by days for specific folder for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
 
 **Statistics Examples**
 
 For specific barcode:
 
 * http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 * http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&fromDate=2012-04-17&toDate=2012-04-17&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 For specific folder:
+* http://testv2.tago.ca/api/analytics/daily?folderId=29367&type=folder&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily?folderId=29367&type=folder&fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+
 
 Request optional parameters:
 
 `fromDate` - Start date. Format: "YYYY-MM-DD" <br/>
 `toDate` - End date. Format: "YYYY-MM-DD"
 
-Response data type: [Scans](scans.md)
+Response data type: [DayScans](scans.md#dayScans)
 
 Response:
 
@@ -94,7 +97,7 @@ Status: 200 OK
 
 ```json
 {
-    "date": "2012-03-24T11:00:39-05:00",
+    "date": "2012-03-24T00:00:00-05:00",
     "uniqueScans": 723,
     "totalScans": 689
   }
