@@ -45,7 +45,7 @@ DayScans Type
     "date": "2012-03-24T11:00:39-05:00",
     "uniqueScans": 723,
     "totalScans": 689
-  }
+}
 ```
 
 ### Refference
@@ -59,7 +59,7 @@ DayScans Type
     <tr>
         <td>date</td>
         <td>date</td>
-        <td>Statistics date</td>
+        <td>Statistics date. Format: 2012-03-24T11:00:39-05:00. In case if enquire statistics for single day, than hours of day will be returned via this field. Format: 3 PM </td>
     </tr>
     <tr>
         <td>uniqueScans</td>
