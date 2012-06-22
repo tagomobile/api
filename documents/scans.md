@@ -33,6 +33,7 @@ Scans Type
 </table>
 <br />
 
+<a name="dayScans"></a>
 DayScans Type
 ---
 
@@ -75,6 +76,7 @@ DayScans Type
 
 <br />
 
+<a name="scanDetails"></a>
 ScanDetails Type
 ---
 
