@@ -61,8 +61,8 @@ Daily Statistics
 
 For specific barcode:
 
-* `GET /analytics/daily?barcodeId={id}` return all scans statistics detailed by days for specific barocde.
-* `GET /analytics/daily?barcodeId={id}fromDate={date}&toDate={date}` return scans statistics detailed by days for specific barocde for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
+* `GET /analytics/daily/{id}` return all scans statistics detailed by days for specific barcode.
+* `GET /analytics/daily/id}?fromDate={date}&toDate={date}` return scans statistics detailed by days for specific barcode for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
 
 For specific folder:
 
@@ -73,9 +73,9 @@ For specific folder:
 
 For specific barcode:
 
-* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/analytics/daily?barcodeId=31840&fromDate=2012-04-17&toDate=2012-04-17&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily/31840?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily/31840?fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/daily/31840?fromDate=2012-04-17&toDate=2012-04-17&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 For specific folder:
 * http://testv2.tago.ca/api/analytics/daily?folderId=29367&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
@@ -111,8 +111,8 @@ Detailed Statistics
 
 For specific barcode:
 
-* `GET /analytics/scans?barcodeId={id}` return list of all scans for specific barocde.
-* `GET /analytics/scans?barcodeId={id}fromDate={date}&toDate={date}` return list of scans for specific barocde for selected date range.
+* `GET /analytics/scans/{id}` return list of all scans for specific barcode.
+* `GET /analytics/scans/{id}?fromDate={date}&toDate={date}` return list of scans for specific barcode for selected date range.
 
 For specific folder:
 
@@ -123,8 +123,8 @@ For specific folder:
 
 For specific barcode:
 
-* http://testv2.tago.ca/api/analytics/scans?barcodeId=31840&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/analytics/scans?barcodeId=31840&fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/31840?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://testv2.tago.ca/api/analytics/31840?fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 For specific folder:
 * http://testv2.tago.ca/api/analytics/scans?folderId=29367&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
