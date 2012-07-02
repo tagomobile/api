@@ -15,8 +15,8 @@ Data type: [Folder](folder.md)
 
 **Example**
 
-* http://testv2.tago.ca/api/folders?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/folders?skip=0&top=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/folders?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/folders?skip=0&top=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 ```
 Status: 200 OK
@@ -48,8 +48,8 @@ Data type: [Folder](folder.md)
 
 **Example**
 
-* http://testv2.tago.ca/api/folders/16771?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/folders?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/folders/16771?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/folders?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 ```
