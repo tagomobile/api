@@ -71,7 +71,7 @@ Data type: [Barcode](barcode.md)
 
 **Example**
 
-* http://testv2.tago.ca/api/barcodes/24787?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/barcodes/24787?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 ```
@@ -112,10 +112,10 @@ Data type: [BarcodeInfo](barcodeInfo.md)
 
 **Example**
 
-* http://testv2.tago.ca/api/barcodes?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/barcodes?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/barcodes?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://testv2.tago.ca/api/barcodes?skip=0&top=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/barcodes?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/barcodes?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/barcodes?folderName=Default&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/barcodes?skip=0&top=5&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 #### Get list with full barcodes information
@@ -129,7 +129,7 @@ Data type: [Barcode](barcode.md)
 
 **Example**
 
-* http://testv2.tago.ca/api/barcodes/full?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/barcodes/full?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 Updating Barcodes
