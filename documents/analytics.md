@@ -8,21 +8,15 @@ General Statistics
 
 For all barcodes:
 * `GET /analytics` return scans statistics for all barcodes for all time
-* `GET /analytics?fromDate={date}&toDate={date}` return scans statistics for all barcodes for selected 
-
-date period
+* `GET /analytics?fromDate={date}&toDate={date}` return scans statistics for all barcodes for selected date period
 
 For specific barcode:
 * `GET /analytics/{id}` return scans statistics for specific barcode by it id for all time
-* `GET /analytics/{id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it 
-
-id for selected date period
+* `GET /analytics/{id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it id for selected date period
 
 For specific folder:
 * `GET /analytics?folderId={id}` return scans statistics for specific folder by it id for all time
-* `GET /analytics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific 
-
-folder by it id for selected date period
+* `GET /analytics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by it id for selected date period
 
 Request optional parameters:
 
@@ -37,21 +31,15 @@ Response data type: [Scans](scans.md)
 
 For all barcodes:
   * http://tagomobile.com/api/v1/analytics?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-  * http://tagomobile.com/api/v1/analytics?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-
-
-10&toDate=2012-10-01
+  * http://tagomobile.com/api/v1/analytics?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
 
 For specific barcode: 
   * http://tagomobile.com/api/v1/analytics/25043?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-  * http://tagomobile.com/api/v1/analytics/25043?ApiKey=df2c3de1-bdbd-45c2-803e-
-
-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
+  * http://tagomobile.com/api/v1/analytics/25043?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
 
 For specific folder: 
   * http://tagomobile.com/api/v1/analytics?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-  * http://tagomobile.com/api/v1/analytics?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-
-
-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
+  * http://tagomobile.com/api/v1/analytics?folderId=16771&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c&fromDate=2012-04-10&toDate=2012-10-01
 
 Response:
 
@@ -74,38 +62,24 @@ Daily Statistics
 For specific barcode:
 
 * `GET /analytics/daily/{id}` return all scans statistics detailed by days for specific barcode.
-* `GET /analytics/daily/id}?fromDate={date}&toDate={date}` return scans statistics detailed by days for 
-
-specific barcode for selected date range. If selected single day (fromDate equals to toDate), than 
-
-statistics by hours will be returned.
+* `GET /analytics/daily/id}?fromDate={date}&toDate={date}` return scans statistics detailed by days for specific barcode for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
 
 For specific folder:
 
 * `GET /analytics/daily?folderId={id}` return all scans statistics detailed by days for specific folder.
-* `GET /analytics/daily?folderId={id}&fromDate={date}&toDate={date}` return scans statistics detailed by 
-
-days for specific folder for selected date range. If selected single day (fromDate equals to toDate), 
-
-than statistics by hours will be returned.
+* `GET /analytics/daily?folderId={id}&fromDate={date}&toDate={date}` return scans statistics detailed by days for specific folder for selected date range. If selected single day (fromDate equals to toDate), than statistics by hours will be returned.
 
 **Statistics Examples**
 
 For specific barcode:
 
 * http://tagomobile.com/api/v1/analytics/daily/31840?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://tagomobile.com/api/v1/analytics/daily/31840?fromDate=2012-04-17&toDate=2012-04-
-
-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://tagomobile.com/api/v1/analytics/daily/31840?fromDate=2012-04-17&toDate=2012-04-
-
-17&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/analytics/daily/31840?fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/analytics/daily/31840?fromDate=2012-04-17&toDate=2012-04-17&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 For specific folder:
 * http://tagomobile.com/api/v1/analytics/daily?folderId=29367&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://tagomobile.com/api/v1/analytics/daily?folderId=29367&fromDate=2012-04-17&toDate=2012-04-
-
-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/analytics/daily?folderId=29367&fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 Request optional parameters:
@@ -138,31 +112,23 @@ Detailed Statistics
 For specific barcode:
 
 * `GET /analytics/scans/{id}` return list of all scans for specific barcode.
-* `GET /analytics/scans/{id}?fromDate={date}&toDate={date}` return list of scans for specific barcode for 
-
-selected date range.
+* `GET /analytics/scans/{id}?fromDate={date}&toDate={date}` return list of scans for specific barcode for selected date range.
 
 For specific folder:
 
 * `GET /analytics/scans?folderId={id}` return list of all scans for specific folder.
-* `GET /analytics/scans?folderId={id}&fromDate={date}&toDate={date}` return list of scans for specific 
-
-folder for selected date range.
+* `GET /analytics/scans?folderId={id}&fromDate={date}&toDate={date}` return list of scans for specific folder for selected date range.
 
 **Statistics Examples**
 
 For specific barcode:
 
 * http://tagomobile.com/api/v1/analytics/31840?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://tagomobile.com/api/v1/analytics/31840?fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-
-
-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/analytics/31840?fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 For specific folder:
 * http://tagomobile.com/api/v1/analytics/scans?folderId=29367&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://tagomobile.com/api/v1/analytics/scans?folderId=29367&fromDate=2012-04-17&toDate=2012-04-
-
-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/analytics/scans?folderId=29367&fromDate=2012-04-17&toDate=2012-04-18&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 
 Request optional parameters:
