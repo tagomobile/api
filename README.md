@@ -126,4 +126,4 @@ We reserves the right to add new attributes and resources to the API without adv
 Help us make it better
 ----------------------
 
-Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please email us at [support@tago.ca](mailto:support@tago.ca).
+Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please email us at [support@tago.ca](mailto:support@tago.ca)
