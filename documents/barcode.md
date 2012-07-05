@@ -47,6 +47,7 @@ Refference
 
 Barcode general:
 
+
 <table>
     <tr>
       <th>Name</th>
