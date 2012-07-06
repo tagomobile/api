@@ -7,8 +7,6 @@ Creating Barocdes
 
 Data type: [Barcode](barcode.md)
 
-Request JSON data:
-
 
 Using curl:
 ```shell
@@ -18,6 +16,7 @@ curl http://tagomobile.com/api/v1/barcodes
   -X POST
 ```
 
+Request JSON data:
 
 ```json
 {
