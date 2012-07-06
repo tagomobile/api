@@ -47,6 +47,8 @@ curl http://tagomobile.com/api/v1/barcodes
   -X POST
 ```
 
+http://tagomobile.com/api/v1/barcodes?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+
 Response example
 -------------------
 
