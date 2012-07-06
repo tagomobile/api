@@ -41,7 +41,7 @@ Status: 201 Created
 
 QR Code Image Generating
 ----
-Please note, that barcode firts should be created and than QR Code image can be donloaded via separate call
+Please note, that barcode firts should be created and than QR Code image can be downloaded via separate call
 
 * `GET /barcodes/{id}/Image` return QR Code image by barcode id. Image size - M, Error Correction Level - M, format - png
 * `GET /barcodes/{id}/Image?format=eps&size=M&errorCorrection=M` return QR Code image by barcode id with custom image settigns.
