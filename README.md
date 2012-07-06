@@ -36,12 +36,12 @@ If query to API does not specify media type, we treat data as **JSON by default*
 Making a request
 ----------------
 
-All URLs start with `http://api.tagomobile.com/v1/` The path is prefixed with the API version. If we change the API in backward-incompatible ways, we will increase the version marker and maintain stable support for the old URLs.
+All URLs start with `http://tagomobile.com/api/v1/` The path is prefixed with the API version. If we change the API in backward-incompatible ways, we will increase the version marker and maintain stable support for the old URLs.
 
 To make a request for all barcodes on your account, you need to append the barcodes index path to the base url to form URL lool like https://api.tagomobile.com/v1/barcodes. In curl, that looks like:
 
 ```shell
-curl http://api.tagomobile.com/v1/barcodes
+curl http://tagomobile.com/api/v1/barcodes
   -H 'X-ApiKey: ApiKey=apiKey'
   -d '{"type": "url", "folderName": "Default","isTrackable": true, "Url": {"Url": "http://google.com"}}'
   -X POST
@@ -54,7 +54,7 @@ Response example
 
 ```shell
 Status: 200 OK
-Location: http://api.tagomobile.com/v1/barcodes
+Location: http://tagomobile.com/api/v1/barcodes
 ```
 
 ```json
@@ -62,9 +62,9 @@ Location: http://api.tagomobile.com/v1/barcodes
   {
     "id": 124542,
     "type": "URL",
-    "folder_id": "231",
+    "folderId": "231",
     "trackable": "true",
-    "short_link": "http://tago.ca/abc",
+    "shortLink": "http://tago.ca/abc",
     "label": "magazine"
     "url": "http://www.youtube.com/watch?v=HkSDN1TXjvk"
   }
@@ -103,10 +103,10 @@ Because Tagomobile API is supported OData protocol, you can take full advantage 
 Below is example of OData parameters applied to URL requests to do some useful operations.
 
 * Pagination. Get 20 barcodes begingin from 41:
-```GET /barcodes?$skip=40&$top=20```
+```GET /barcodes/query?$skip=40&$top=20```
 
 * Sorting. Get barcodes sorted by created date:
-```GET /barcodes?$orderby=created_date```
+```GET /barcodes/query?$orderby=created_date```
 
 * Filtering. Get onlty trackable barcodes:
 ```GET /barcodes?$filter=trackable eq 'true'```
