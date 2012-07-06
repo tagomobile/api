@@ -21,6 +21,16 @@ Request JSON data:
 }
 
 ```
+
+Using curl:
+```shell
+curl http://tagomobile.com/api/v1/barcodes
+  -H 'X-ApiKey: ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c'
+  -d '{"type": "url", "folderName": "Default","isTrackable": true, "Url": {"Url": "http://google.com"}}'
+  -X POST
+```
+
+
 Response:
 
 ```
