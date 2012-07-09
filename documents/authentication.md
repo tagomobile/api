@@ -9,11 +9,14 @@ You can sign up for TAGO account by following link: [http://tagomobile.com/signu
 All API requests require authentication. 
 There is three options you can pass API key with the request.
 
-Query arguments (default)
+
+'X-ApiKey ' HTTP header
 ----------------
 
-`GET /barcodes?apiKey=apiKey`
-
+```shell
+curl http://api.tagomobile.com/v1/barcodes
+  -H 'X-ApiKey: ApiKey=apiKey'
+```
 
 'Authorization ' HTTP header
 ----------------
@@ -23,11 +26,11 @@ curl http://api.tagomobile.com/v1/barcodes
   -H 'Authorize: ApiKey=apiKey'
 ```
 
-
-'X-ApiKey ' HTTP header
+Query arguments
 ----------------
 
-```shell
-curl http://api.tagomobile.com/v1/barcodes
-  -H 'X-ApiKey: ApiKey=apiKey'
-```
+`GET /barcodes?apiKey=apiKey`
+
+
+
+
