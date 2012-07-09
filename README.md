@@ -1,8 +1,7 @@
 Tagomobile API
 ====================
 
-This is the API for TAGO (tagomobile.com). 
-Tago API is a RESTful style API that uses JSON for serialization and authentication token for authentication.
+Tago API is a RESTful style API that uses JSON for serialization and authentication token for authentication. The API allows you Create, Manage and Track QR Codes in your TAGO account.
 
 Additionally our API enpoint is fully supporting [OData](http://odata.org) protocol. OData is an extensiton for RESTful API protocol, which adds a lot of useful functionality to it. One of the main feature is that OData allows RPC-style operations to be made from major programing languages. You can read more about OData stanart at http://odata.org. Some of the libraries supports OData client-side code generation is .NET, PHP, Ruby, Objective C, Android and more.
 
@@ -13,7 +12,7 @@ http://www.odata.org/libraries
 Authentication
 ----------------
 
-In order to access our API, you need to have TAGO account. From your account you will be able to get API key that you will use with every request to the Tagomobile API. To obtain API key you need to login to TAGO account, go to Account page, click button "Generate API Key" and copy generated key.
+In order to access our API, you need to have TAGO account. From your account you will be able to get API key that you will use with every request to the Tagomobile API. To obtain API key you need to login to TAGO account, go to Account page, navigate to "API Key" tab, click "Generate" button and copy generated key.
 
 You can sign up for TAGO account by following link: [http://tagomobile.com/signup](http://tagomobile.com/pricing)
 
@@ -28,15 +27,15 @@ Read the [Authentication Guide](https://github.com/tagomobile/api/blob/master/do
 Data formats
 ----------------
 
-Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`). You must supply `Content-Type` and `Accept` header on all requests.
+Tagomobile API media type determines how API serializes and deserializes the HTTP message body. We support XML (`application/xml`), JSON (`application/json`), and form-urlencoded data (`application/x-www-form-urlencoded`). JSON is default data type and it is recommeded to use it.
 
-If query to API does not specify media type, we treat data as **JSON by default**.
+If query to API does not specify media type, we treat data as **JSON by default**. You can set cutom  media type by using `Content-Type` and `Accept` header of request.
 
 
-Making a request
+Request example
 ----------------
 
-All URLs start with `http://tagomobile.com/api/v1/` The path is prefixed with the API version. If we change the API in backward-incompatible ways, we will increase the version marker and maintain stable support for the old URLs.
+All API request URLs start with `http://tagomobile.com/api/v1/`. If we change the API in backward-incompatible ways, we will increase the version marker and maintain stable support for the old URLs.
 
 To make a request for all barcodes on your account, you need to append the barcodes index path to the base url to form URL lool like https://tagomobile.com/api/v1/barcodes. In curl, that looks like:
 
@@ -48,7 +47,7 @@ Or URL to test in browser:
 
 http://tagomobile.com/api/v1/barcodes?ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
-Please note, that provided in documentation key is only for testing purposes, do not use it in your production environment. This test key could be used only for GET requests.
+**Please note:** API Key provided in documentation is only for testing purposes, do not use it in your production environment. This test key could be used only for GET requests.
 
 Response example
 -------------------
@@ -57,7 +56,6 @@ Response example
 
 ```shell
 Status: 200 OK
-Location: http://tagomobile.com/api/v1/barcodes
 ```
 
 ```json
@@ -85,10 +83,14 @@ Response Status Codes
 * 404 - The requested resource could not be found. See response content for details.
 * 500 - Internal Server Error. See response content for additional details. We are notified about any server error and will resolve it shortly.
 
-**Errors**
+Errors Handling
+---------------
+
+If TAGO is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
 
 When a non-2xx HTTP status is returned, the following error representation will be returned.
 Error details is passed in reponse content in plain text fromat.
+
 
 Example:
 
@@ -119,10 +121,6 @@ Data structures
 * [Scans] (https://github.com/tagomobile/api/blob/master/documents/scans.md)
 * [DayScans] (https://github.com/tagomobile/api/blob/master/documents/scans.md#dayScans)
 * [ScansDetails] (https://github.com/tagomobile/api/blob/master/documents/scans.md#scanDetails)
-
-
-If TAGO is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
-In case if particular API method failed, you will receive response with error status together with additional descriptin of the error.
 
 
 OData Queries
