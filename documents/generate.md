@@ -3,7 +3,7 @@ Generate
 
 ### Generate Embeddede Text code using GET request
 
-This method will generate url or text code using single API call and without adding the barcode into the account. Currently URL and Text QR Code generation is supported using this method. Please email us at support@tago.ca if missing particular QR Code type support.
+This method will generate url or text code using single API call and without adding the barcode into the account. Currently URL and Text QR Code generation is supported using this method. Please email us at support@tago.ca if you missing particular QR Code type support.
 
 * `GET /generate/{type}.{image format}?type={type}&{type}=My%20text` generate barcode without adding it to the account
 * `GET /generate/{type}.{image format}?type={type}&{type}=http://google.com&format=png&size=M&errorCorrection=M` generate barcode with custom image settigns. Barcode will not be added to the account
@@ -46,7 +46,7 @@ This method will generate Trackable or Non-Trackable code using single API call.
 
 Trackable code will be added into the account automatically.
 
-For Non-Trackable you could optioanlly specify if code needed to be added it into the account or not. If not specified, code will be added by default. Currently Non-Trackable barcodes of following types could be generated: URL, Text and Contact Info. Please email us at support@tago.ca if missing particular QR Code type support.
+For Non-Trackable you could optioanlly specify if code needed to be added it into the account or not. If not specified, code will be added by default. Currently Non-Trackable barcodes of following types could be generated: URL, Text and Contact Info. Please email us at support@tago.ca if you missing particular QR Code type support.
 
 * `POST /generate.{image format}?add={bool}&format={format}&size={size}&errorCorrection={level}` generate barcode. 'add' parameter is 'true' by default.
 
