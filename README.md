@@ -79,7 +79,7 @@ Response Status Codes
 * 201 - Item was successfully created. The Location header returned contains the URL to the newly-created item.
 * 400 - Wrong input parameter. See response content for details.
 * 401 - User not found. No user was found for granted ApiKey.
-* 403 - Access dinied. User with granted ApiKey don't have access to requested resource.
+* 403 - Access denied. User with granted ApiKey don't have access to requested resource.
 * 404 - The requested resource could not be found. See response content for details.
 * 500 - Internal Server Error. See response content for additional details. We are notified about any server error and will resolve it shortly.
 
