@@ -38,7 +38,7 @@ Making a request
 
 All URLs start with `http://tagomobile.com/api/v1/` The path is prefixed with the API version. If we change the API in backward-incompatible ways, we will increase the version marker and maintain stable support for the old URLs.
 
-To make a request for all barcodes on your account, you need to append the barcodes index path to the base url to form URL lool like https://api.tagomobile.com/v1/barcodes. In curl, that looks like:
+To make a request for all barcodes on your account, you need to append the barcodes index path to the base url to form URL lool like https://tagomobile.com/api/v1/barcodes. In curl, that looks like:
 
 ```shell
 curl http://tagomobile.com/api/v1/barcodes
