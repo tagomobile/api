@@ -10,7 +10,7 @@ All API requests require authentication.
 There is three options you can pass API key with the request.
 
 
-'X-ApiKey ' HTTP header
+'X-ApiKey' HTTP header (default)
 ----------------
 
 ```shell
