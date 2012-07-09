@@ -3,16 +3,20 @@ Generate
 
 ### Generate Embeddede Text code using GET request
 
-This method will generate url or text code using single API call and without adding the barcode into the account.
+This method will generate url or text code using single API call and without adding the barcode into the account. Currently URL and Text QR Code generation is supported. 
 
-* `GET /generate?type=text&text=My%20text` generate barcode without adding it to the account
-* `GET /generate/?type=text&text=My%20text&format=png&size=M&errorCorrection=M` generate barcode with custom image settigns. Barcode will not be added to the account
+* `GET /generate.{image format}?type={text\url}&text=My%20text` generate barcode without adding it to the account
+* `GET /generate.{image format}?type={text\url}&text=My%20text&format=png&size=M&errorCorrection=M` generate barcode with custom image settigns. Barcode will not be added to the account
 <br />
+
+TAGO API currently support following image formates: png, gif, jpg, bmp, exif, tiff, icon.
+
+
 
 **Examples**
 
-* http://tagomobile.com/api/v1/generate?type=url&url=http://google.com&format=png&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
-* http://tagomobile.com/api/v1/generate?type=text&text=Hello%20World!&format=png&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/generate.png?type=url&url=http://google.com&format=png&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
+* http://tagomobile.com/api/v1/generate.jpg?type=text&text=Hello%20World!&format=png&ApiKey=df2c3de1-bdbd-45c2-803e-84b52d335d9c
 
 *Note: Provided API Key is for testing purposes only, do not use in production environment.
 
