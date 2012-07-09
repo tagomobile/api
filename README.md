@@ -86,7 +86,7 @@ Response Status Codes
 * 404 - The requested resource could not be found. See response content for details.<br/>
 * 500 - Internal Server Error. See response content for additional details. We are notified about any server error and will resolve it shortly.<br/>
 
-*Errors*
+**Errors**
 
 When a non-2xx HTTP status is returned, the following error representation will be returned.
 Error details is passed in reponse content in plain text fromat.
