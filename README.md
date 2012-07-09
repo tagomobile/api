@@ -77,15 +77,13 @@ Location: http://tagomobile.com/api/v1/barcodes
 Response Status Codes
 ---------------
 
-* 200 - Request was successful.<br/>
-* 201 - Item was successfully created. The Location header returned contains the URL to the newly-created item.<br/>
-* 204 - Request was successful but no content is returned.<br/>
-* 400 - Wrong input parameter. See response content for details.<br/>
-* 401 - User not found. No user was found for granted ApiKey.<br/>
-* 403 - Access dinied. User with granted ApiKey don't have access to requested resource.<br/>
-* 404 - The requested resource could not be found. See response content for details.<br/>
-* 500 - Internal Server Error. See response content for additional details. We are notified about any server error and will resolve it shortly.<br/>
-
+* 200 - Request was successful.
+* 201 - Item was successfully created. The Location header returned contains the URL to the newly-created item.
+* 400 - Wrong input parameter. See response content for details.
+* 401 - User not found. No user was found for granted ApiKey.
+* 403 - Access dinied. User with granted ApiKey don't have access to requested resource.
+* 404 - The requested resource could not be found. See response content for details.
+* 500 - Internal Server Error. See response content for additional details. We are notified about any server error and will resolve it shortly.
 **Errors**
 
 When a non-2xx HTTP status is returned, the following error representation will be returned.
