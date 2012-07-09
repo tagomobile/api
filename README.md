@@ -74,6 +74,37 @@ Location: http://tagomobile.com/api/v1/barcodes
 ]
 ```
 
+Response Status Codes
+---------------
+
+Data Format
+API response respresentations are returned in JSON with the application/json content type.
+
+Status Codes
+200 - Request was successful.
+201 - Item was successfully created. The Location header returned contains the URL to the newly-created item.
+204 - Request was successful but no content is returned.
+400 - Wrong input parameter. See response content for details.
+401 - User not found. No user was found for granted ApiKey
+403 - Access dinied. User with granted ApiKey don't have access to requested resource.
+404 - Requested resource not found. See response content for details
+
+404 - The requested resource could not be found.
+500 - Server error. Try again shortly.
+Errors
+When a non-2xx HTTP status is returned, the following error representation will be returned:
+
+Example:
+
+```shell
+Status: 403 Access Denied
+Content-Type: text/plain
+```
+
+```json
+"Access denied for user with ID = 1232"
+```
+
 API reference
 -----------------
 General
