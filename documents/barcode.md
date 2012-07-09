@@ -68,7 +68,7 @@ Barcode general:
         <td>enum</td>
         <td>no</td>
         <td>yes</td>
-        <td>Type of barcode. Values: url, text, contact</td>
+        <td>Type of barcode. Values: url, text, contact, other</td>
     </tr>
     <tr>
         <td>isTrackable</td>
