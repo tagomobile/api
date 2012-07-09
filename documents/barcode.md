@@ -6,6 +6,8 @@ When your requesting\creating or updating  specific type of QR Code (Url, Text N
 need to you read\write Barcode general paramets (which are the same for all types of barcodes) and in correspondent
 field (Url, Text, Contact) read\write specific JSON object, representing this particular type.
 
+**Please note:** Currenty we support Creating\Updating only URL, Text Note and Contact Info barcode types. Please email us at support@tago.ca if you missing particular QR Code type support.
+
 **Examples**
 
 URL Barcode:
