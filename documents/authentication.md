@@ -14,7 +14,7 @@ There is three options you can pass API key with the request.
 ----------------
 
 ```shell
-curl http://api.tagomobile.com/v1/barcodes
+curl http://tagomobile.com/api/v1/barcodes
   -H 'X-ApiKey: ApiKey=apiKey'
 ```
 
@@ -22,7 +22,7 @@ curl http://api.tagomobile.com/v1/barcodes
 ----------------
 
 ```shell
-curl http://api.tagomobile.com/v1/barcodes
+curl http://tagomobile.com/api/v1/barcodes
   -H 'Authorize: ApiKey=apiKey'
 ```
 
