@@ -11,12 +11,12 @@ For all barcodes:
 * `GET /analytics/GetAllBarcodesStatistics?fromDate={date}toDate{date}` return scans statistics for all barcodes for selected date period
 
 For specific barcode:
-* `GET /analytics/GetBarcodeStatistics?id={id}` return scans statistics for specific barcode by it id for all time
+* `GET /analytics/GetBarcodeStatistics?id={id}` return scans statistics for specific barcode by its id for all time
 * `GET /analytics/GetBarcodeStatistics?id={id}?fromDate={date}&toDate={date}` return scans statistics for specific barcode by it id for selected date period
 
 For specific folder:
-* `GET /analytics/GetFolderStatistics?folderId={id}` return scans statistics for specific folder by it id for all time
-* `GET /analytics/GetFolderStatistics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by it id for selected date period
+* `GET /analytics/GetFolderStatistics?folderId={id}` return scans statistics for specific folder by its id for all time
+* `GET /analytics/GetFolderStatistics?folderId={id}?fromDate={date}&toDate={date}` return scans statistics for specific folder by its id for selected date period
 
 Request optional parameters:
 
